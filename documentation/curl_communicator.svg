@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1052.3622"
+   height="744.09448"
+   id="svg3166"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="curl_communicator.svg.2015_04_15_11_05_49.1.svg">
+  <defs
+     id="defs3168">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path4095"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000aff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.5372549"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.0281631"
+     inkscape:cx="363.26444"
+     inkscape:cy="372.04724"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1215"
+     inkscape:window-height="1000"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3171">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.2677)">
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="462.96155"
+       y="198.46123"
+       id="text4020"
+       sodipodi:linespacing="125%"
+       transform="translate(0,308.2677)"><tspan
+         sodipodi:role="line"
+         id="tspan4022"
+         x="462.96155"
+         y="198.46123" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="254.82336"
+       y="343.33072"
+       id="text5742"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5744"
+         x="254.82336"
+         y="343.33072" /><tspan
+         sodipodi:role="line"
+         id="tspan5746"
+         x="254.82336"
+         y="368.33072">Workflow des Curl Communicator Moduls</tspan></text>
+    <rect
+       style="opacity:0.5;fill:#e3dedb;fill-opacity:1;stroke:none"
+       id="rect3174-1"
+       width="714.86713"
+       height="551.46893"
+       x="186.7408"
+       y="441.56415"
+       ry="99.812614" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="415.30374"
+       y="497.00281"
+       id="text5965"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5967"
+         x="415.30374"
+         y="497.00281">Curl Communicator</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="M 211.05601,289.88639 C 27.233033,290.859 0.97260833,290.859 0.97260833,290.859"
+       id="path5971"
+       inkscape:connector-curvature="0"
+       transform="translate(0,308.2677)"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="m 0.97260833,449.39416 c 185.76819167,0 208.13818167,0.97261 208.13818167,0.97261"
+       id="path7037"
+       inkscape:connector-curvature="0"
+       transform="translate(0,308.2677)"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="opacity:0.35;fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect7221"
+       width="178.95993"
+       height="290.80988"
+       x="212.02861"
+       y="548.55103"
+       ry="53.700695" />
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="257.74121"
+       y="578.70197"
+       id="text7223"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7225"
+         x="257.74121"
+         y="578.70197">Curl Library</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="22.369989"
+       y="575.78412"
+       id="text7227"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7229"
+         x="22.369989"
+         y="575.78412">Look Up nach Job Files</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="106.72242"
+       y="618.57886"
+       id="text7231"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="108.95094"
+         y="618.57886"
+         id="tspan7235">z.B. FTPS, HTTPS, </tspan><tspan
+         sodipodi:role="line"
+         x="108.95094"
+         y="636.07886"
+         id="tspan7243">SFTP, TFTP mit SSL </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="82.730583"
+       y="728.48364"
+       id="text7247"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7249"
+         x="84.959099"
+         y="728.48364">Verschlüsselte </tspan><tspan
+         sodipodi:role="line"
+         x="82.730583"
+         y="745.98364"
+         id="tspan7251">Job File</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="226.61774"
+       y="614.68842"
+       id="text7261"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="226.61774"
+         y="614.68842"
+         id="tspan7273">Verbindung </tspan><tspan
+         sodipodi:role="line"
+         x="226.61774"
+         y="632.18842"
+         id="tspan7277">mit dem </tspan><tspan
+         sodipodi:role="line"
+         x="226.61774"
+         y="649.68842"
+         id="tspan4379">Server </tspan><tspan
+         sodipodi:role="line"
+         x="226.61774"
+         y="667.18842"
+         id="tspan7267">und </tspan><tspan
+         sodipodi:role="line"
+         x="226.61774"
+         y="684.68842"
+         id="tspan4381">Management </tspan><tspan
+         sodipodi:role="line"
+         x="226.61774"
+         y="702.18842"
+         id="tspan7271">des </tspan><tspan
+         sodipodi:role="line"
+         x="226.61774"
+         y="719.68842"
+         id="tspan4383">Job Downloads.</tspan><tspan
+         sodipodi:role="line"
+         x="226.61774"
+         y="737.18842"
+         id="tspan7279" /><tspan
+         sodipodi:role="line"
+         x="226.61774"
+         y="754.68842"
+         id="tspan7285" /></text>
+    <rect
+       style="opacity:0.35;fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect7221-3"
+       width="178.95993"
+       height="290.80988"
+       x="440.59158"
+       y="550.01001"
+       ry="53.700695" />
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="492.1398"
+       y="579.6745"
+       id="text7310"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7312"
+         x="492.1398"
+         y="579.6745">Decrypter</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="445.45459"
+       y="616.63361"
+       id="text7314"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7316"
+         x="445.45459"
+         y="616.63361">Entschlüsselung und </tspan><tspan
+         sodipodi:role="line"
+         x="445.45459"
+         y="634.13361"
+         id="tspan7318">SHA1 Hashabgleich </tspan><tspan
+         sodipodi:role="line"
+         x="445.45459"
+         y="651.63361"
+         id="tspan7322">des Jobs</tspan><tspan
+         sodipodi:role="line"
+         x="445.45459"
+         y="669.13361"
+         id="tspan7320">durch die Crypto Library</tspan><tspan
+         sodipodi:role="line"
+         x="445.45459"
+         y="686.63361"
+         id="tspan7324"> von LibreSSL</tspan><tspan
+         sodipodi:role="line"
+         x="445.45459"
+         y="704.13361"
+         id="tspan7348" /><tspan
+         sodipodi:role="line"
+         x="445.45459"
+         y="721.63361"
+         id="tspan7350">AES Schlüssel muss</tspan><tspan
+         sodipodi:role="line"
+         x="445.45459"
+         y="739.13361"
+         id="tspan7352">vorher mit der </tspan><tspan
+         sodipodi:role="line"
+         x="445.45459"
+         y="756.63361"
+         id="tspan7354">Hardware </tspan><tspan
+         sodipodi:role="line"
+         x="445.45459"
+         y="774.13361"
+         id="tspan7358">Entschlüsselung</tspan><tspan
+         sodipodi:role="line"
+         x="445.45459"
+         y="791.63361"
+         id="tspan7356">lesbar gemacht werden.</tspan></text>
+    <rect
+       style="opacity:0.35;fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect7221-3-0"
+       width="569.94849"
+       height="58.356483"
+       x="242.17949"
+       y="898.2038"
+       ry="10.776057"
+       inkscape:transform-center-x="-37.170556"
+       inkscape:transform-center-y="-26.348248" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="393.9064"
+       y="931.75873"
+       id="text7344"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7346"
+         x="393.9064"
+         y="931.75873">Management des Logfile Uploads </tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.48739648;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="m 1050.1733,924.97054 c -97.75628,0 -235.85642,0.94298 -235.85642,0.94298"
+       id="path7360"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.00390124;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="M 241.20492,927.86874 C 6.810209,929.81347 6.810209,929.81347 6.810209,929.81347"
+       id="path4153"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="opacity:0.35;fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect7221-3-4"
+       width="178.95993"
+       height="290.80988"
+       x="664.2915"
+       y="545.14697"
+       ry="53.700695" />
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="705.14105"
+       y="578.7019"
+       id="text4355"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4357"
+         x="705.14105"
+         y="578.7019">Tar und Unzip</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="678.88062"
+       y="612.74323"
+       id="text4359"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4361"
+         x="678.88062"
+         y="612.74323">Entpacken </tspan><tspan
+         sodipodi:role="line"
+         x="678.88062"
+         y="630.24323"
+         id="tspan4371">der </tspan><tspan
+         sodipodi:role="line"
+         x="678.88062"
+         y="647.74323"
+         id="tspan4363">Entschlüsselten </tspan><tspan
+         sodipodi:role="line"
+         x="678.88062"
+         y="665.24323"
+         id="tspan4369">Dateien</tspan><tspan
+         sodipodi:role="line"
+         x="678.88062"
+         y="682.74323"
+         id="tspan4365">und</tspan><tspan
+         sodipodi:role="line"
+         x="678.88062"
+         y="700.24323"
+         id="tspan4367"> Lagern auf der </tspan><tspan
+         sodipodi:role="line"
+         x="678.88062"
+         y="717.74323"
+         id="tspan4373">Workbench</tspan></text>
+  </g>
+</svg>

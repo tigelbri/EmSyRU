@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1052.3622"
+   height="744.09448"
+   id="svg3166"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="curl_communicator.svg.2015_04_15_11_05_49.1.svg">
+  <defs
+     id="defs3168">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path4095"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000aff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.5372549"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.0281631"
+     inkscape:cx="524.29776"
+     inkscape:cy="372.04724"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1215"
+     inkscape:window-height="1000"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3171">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.2677)">
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="462.96155"
+       y="198.46123"
+       id="text4020"
+       sodipodi:linespacing="125%"
+       transform="translate(0,308.2677)"><tspan
+         sodipodi:role="line"
+         id="tspan4022"
+         x="462.96155"
+         y="198.46123" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="278.16595"
+       y="344.30331"
+       id="text5742"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5744"
+         x="278.16595"
+         y="344.30331" /><tspan
+         sodipodi:role="line"
+         id="tspan5746"
+         x="278.16595"
+         y="369.30331">Workflow des Embedded Updater Moduls</tspan></text>
+    <rect
+       style="opacity:0.5;fill:#e3dedb;fill-opacity:1;stroke:none"
+       id="rect3174-1"
+       width="714.86713"
+       height="551.46893"
+       x="186.7408"
+       y="441.56415"
+       ry="99.812614" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="415.30374"
+       y="497.00281"
+       id="text5965"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5967"
+         x="415.30374"
+         y="497.00281">Embedded Updater</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="M 211.05601,289.88639 C 27.233033,290.859 0.97260833,290.859 0.97260833,290.859"
+       id="path5971"
+       inkscape:connector-curvature="0"
+       transform="translate(0,308.2677)"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="m 0.97260833,449.39416 c 185.76819167,0 208.13818167,0.97261 208.13818167,0.97261"
+       id="path7037"
+       inkscape:connector-curvature="0"
+       transform="translate(0,308.2677)"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="opacity:0.35;fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect7221"
+       width="178.95993"
+       height="290.80988"
+       x="212.02861"
+       y="548.55103"
+       ry="53.700695" />
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="275.24817"
+       y="579.67456"
+       id="text7223"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7225"
+         x="275.24817"
+         y="579.67456">Parser</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="27.23303"
+       y="578.70197"
+       id="text7227"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7229"
+         x="27.23303"
+         y="578.70197">Look Up nach Job Files</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="106.72242"
+       y="618.57886"
+       id="text7231"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="108.95094"
+         y="618.57886"
+         id="tspan7243">auf der Workbench </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="88.566231"
+       y="778.08667"
+       id="text7247"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="88.566231"
+         y="778.08667"
+         id="tspan7251">Job.conf</tspan><tspan
+         sodipodi:role="line"
+         x="90.794746"
+         y="795.58667"
+         id="tspan4477">Konfigurationsfile </tspan><tspan
+         sodipodi:role="line"
+         x="88.566231"
+         y="813.08667"
+         id="tspan4479">mit eizelnen Tasks</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="220.78209"
+       y="620.52405"
+       id="text7261"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="220.78209"
+         y="620.52405"
+         id="tspan4383">Parsen des Jobs und </tspan><tspan
+         sodipodi:role="line"
+         x="220.78209"
+         y="638.02405"
+         id="tspan4493">Initialisierung </tspan><tspan
+         sodipodi:role="line"
+         x="220.78209"
+         y="655.52405"
+         id="tspan4497">der einzelnen</tspan><tspan
+         sodipodi:role="line"
+         x="220.78209"
+         y="673.02405"
+         id="tspan4495">Tasks</tspan><tspan
+         sodipodi:role="line"
+         x="220.78209"
+         y="690.52405"
+         id="tspan4499"></tspan><tspan
+         sodipodi:role="line"
+         x="220.78209"
+         y="708.02405"
+         id="tspan4501">Parsen der </tspan><tspan
+         sodipodi:role="line"
+         x="220.78209"
+         y="725.52405"
+         id="tspan4503">Packages.conf mit den</tspan><tspan
+         sodipodi:role="line"
+         x="220.78209"
+         y="743.02405"
+         id="tspan4505">Informationen der zu</tspan><tspan
+         sodipodi:role="line"
+         x="220.78209"
+         y="760.52405"
+         id="tspan4507">verwaltenden </tspan><tspan
+         sodipodi:role="line"
+         x="220.78209"
+         y="778.02405"
+         id="tspan4509">Packages </tspan><tspan
+         sodipodi:role="line"
+         x="220.78209"
+         y="795.52405"
+         id="tspan7279" /><tspan
+         sodipodi:role="line"
+         x="220.78209"
+         y="813.02405"
+         id="tspan7285" /></text>
+    <rect
+       style="opacity:0.35;fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect7221-3"
+       width="377.37204"
+       height="290.80988"
+       x="440.59158"
+       y="550.01001"
+       ry="53.700695" />
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="492.1398"
+       y="579.6745"
+       id="text7310"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7312"
+         x="492.1398"
+         y="579.6745" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14.19762039px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="451.74252"
+       y="608.34875"
+       id="text7314"
+       sodipodi:linespacing="125%"
+       transform="scale(0.98608075,1.0141157)"><tspan
+         sodipodi:role="line"
+         x="451.74252"
+         y="608.34875"
+         id="tspan7356">Bearbeitung der </tspan><tspan
+         sodipodi:role="line"
+         x="451.74252"
+         y="626.09576"
+         id="tspan4588">einzelnen Tasks</tspan><tspan
+         sodipodi:role="line"
+         x="451.74252"
+         y="643.84277"
+         id="tspan4590"></tspan><tspan
+         sodipodi:role="line"
+         x="451.74252"
+         y="661.58978"
+         id="tspan4616">- Remove</tspan><tspan
+         sodipodi:role="line"
+         x="451.74252"
+         y="679.33685"
+         id="tspan4594">- Add</tspan><tspan
+         sodipodi:role="line"
+         x="451.74252"
+         y="697.08386"
+         id="tspan4598">- Update</tspan><tspan
+         sodipodi:role="line"
+         x="451.74252"
+         y="714.83087"
+         id="tspan4614" /><tspan
+         sodipodi:role="line"
+         x="451.74252"
+         y="732.57788"
+         id="tspan4606">Jeder Task </tspan><tspan
+         sodipodi:role="line"
+         x="451.74252"
+         y="750.32495"
+         id="tspan4612">wird Atomar</tspan><tspan
+         sodipodi:role="line"
+         x="451.74252"
+         y="768.07196"
+         id="tspan4610">ausgeführt</tspan><tspan
+         sodipodi:role="line"
+         x="451.74252"
+         y="785.81897"
+         id="tspan4618" /></text>
+    <rect
+       style="opacity:0.35;fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect7221-3-0"
+       width="569.94849"
+       height="58.356483"
+       x="242.17949"
+       y="898.2038"
+       ry="10.776057"
+       inkscape:transform-center-x="-37.170556"
+       inkscape:transform-center-y="-26.348248" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="411.41336"
+       y="931.75873"
+       id="text7344"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7346"
+         x="411.41336"
+         y="931.75873">Logging aller Ereignisse </tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.00390124;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="M 241.20492,927.86874 C 6.810209,929.81347 6.810209,929.81347 6.810209,929.81347"
+       id="path4153"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="95.833237"
+       y="712.92188"
+       id="text4511"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4513"
+         x="95.833237"
+         y="712.92188">Packages.conf</tspan><tspan
+         sodipodi:role="line"
+         x="95.833237"
+         y="730.42188"
+         id="tspan4515">Kinfugrationsfile</tspan><tspan
+         sodipodi:role="line"
+         x="95.833237"
+         y="747.92188"
+         id="tspan4517">eigener Packages</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="597.18152"
+       y="579.67456"
+       id="text4519"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4521"
+         x="597.18152"
+         y="579.67456">Updater</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="587.45544"
+       y="621.49664"
+       id="text4620"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4622"
+         x="587.45544"
+         y="621.49664">          Update Task:</tspan><tspan
+         sodipodi:role="line"
+         x="587.45544"
+         y="638.99664"
+         id="tspan4650" /><tspan
+         sodipodi:role="line"
+         x="587.45544"
+         y="656.49664"
+         id="tspan4636">- Scan aktuelles Environment</tspan><tspan
+         sodipodi:role="line"
+         x="587.45544"
+         y="673.99664"
+         id="tspan4628">- Verschiebe Update Files</tspan><tspan
+         sodipodi:role="line"
+         x="587.45544"
+         y="691.49664"
+         id="tspan4630">- Beende akutellen Prozess</tspan><tspan
+         sodipodi:role="line"
+         x="587.45544"
+         y="708.99664"
+         id="tspan4632">- Starte neuen Prozess</tspan><tspan
+         sodipodi:role="line"
+         x="587.45544"
+         y="726.49664"
+         id="tspan4634">- Sanity Check</tspan><tspan
+         sodipodi:role="line"
+         x="587.45544"
+         y="743.99664"
+         id="tspan4648">- Update symbolischen Link</tspan></text>
+  </g>
+</svg>
