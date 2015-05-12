@@ -17,7 +17,6 @@
 #include <stdlib.h> 
 #include <sys/types.h>
 #include <signal.h>
-#include <dirent.h>
 #include <errno.h>
 #include <map>
 #include <fstream>
@@ -27,13 +26,7 @@
 #include "Logger.hpp"
 #include <fts.h>
 #include <sys/stat.h>
-
-/*extern void* xrealloc (void *ptr, size_t size);
-extern char* readlink_malloc (const char *filename);
-extern int getProcIdByName(std::string procName);
-extern void signalHandler(int signum);
-extern void registerHandler();
-extern bool SIGNALRECEIVED;*/
+#include "UnixBridge.hpp"
 
 
 using std::string;
@@ -62,11 +55,11 @@ public:
     ~Updater();
 
 	int update(string updateFile);
-	int getUpdateFiles(string dir, string upFile, std::vector<string>& files);
-	int createDir(string dir, mode_t mode);
+	//int getUpdateFiles(string dir, string upFile, std::vector<string>& files);
+	//int createDir(string dir, mode_t mode);
 	
 	static Logger log_;
-	static void setLogger(Logger& log){log_ = log;}
+	static void setLogger(Logger& log){log_ = log; UnixBridge::setLogger(log);}
 	
 private:
 
@@ -107,17 +100,18 @@ private:
 	int parsePackage(ifstream& packageStream);
 	int parseAddPackage(ifstream& packageStream);
 	int writeConfig();
-	int writeUpdateFile(string in, string out);
+	//int writeUpdateFile(string in, string out);
 	int doAddJob(Job& addJob);
 	int doRemoveJob(Job& rmJob);
 	int doUpdateJob(Job& upJob);
 	int recoverExecutable(string recover_path, Package& package);
-	string getCurrentAppfolder(string link);
+	//string getCurrentAppfolder(string link);
 	string trim(string input);
-	int createSymbolicLink(string name, string content);
+	//int createSymbolicLink(string name, string content);
 	int sanityTimeSec_;
-	int deleteDir(string dir);
-	int	moveFiles(string move_from, string move_to);	
+	//int deleteDir(string dir);
+	//int	moveFiles(string move_from, string move_to);
+	UnixBridge ub_;	
     std::map<string,Package> packageMap_;
     std::map<string,Package> addMap_;
     string confFile_;

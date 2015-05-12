@@ -58,6 +58,7 @@ set(UPDATER_SOURCES
 	src/Logger.cpp
 	src/Timestamp.cpp
 	src/CurlCommunicator.cpp
+	src/UnixBridge.cpp
 )
 
 ###############################################################################
