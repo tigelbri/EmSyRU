@@ -1,5 +1,5 @@
 /**
-* @file Package.hpp
+* @file Updater.hpp
 * @brief Package class for holding and controling packages to update
 * @author Tristan Igelbrink
 * @date 20.03.2015
@@ -100,17 +100,12 @@ private:
 	int parsePackage(ifstream& packageStream);
 	int parseAddPackage(ifstream& packageStream);
 	int writeConfig();
-	//int writeUpdateFile(string in, string out);
 	int doAddJob(Job& addJob);
 	int doRemoveJob(Job& rmJob);
 	int doUpdateJob(Job& upJob);
 	int recoverExecutable(string recover_path, Package& package);
-	//string getCurrentAppfolder(string link);
 	string trim(string input);
-	//int createSymbolicLink(string name, string content);
 	int sanityTimeSec_;
-	//int deleteDir(string dir);
-	//int	moveFiles(string move_from, string move_to);
 	UnixBridge ub_;	
     std::map<string,Package> packageMap_;
     std::map<string,Package> addMap_;

@@ -59,6 +59,7 @@ set(UPDATER_SOURCES
 	src/Timestamp.cpp
 	src/CurlCommunicator.cpp
 	src/UnixBridge.cpp
+	src/EmSyRU.cpp
 )
 
 ###############################################################################
@@ -67,13 +68,13 @@ set(UPDATER_SOURCES
 
 add_executable(EmSyRU ${UPDATER_SOURCES})
 
-add_executable(CryptoFile src/crypto-file-example src/Crypto.cpp )
+#add_executable(CryptoFile src/crypto-file-example src/Crypto.cpp )
 
 ###############################################################################
 # External library dependencys
 ###############################################################################
 
-target_link_libraries(CryptoFile ressl-crypto)
+#target_link_libraries(CryptoFile ressl-crypto)
 target_link_libraries(EmSyRU ressl-crypto curl curlpp)
 
 
