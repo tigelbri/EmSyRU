@@ -42,7 +42,7 @@ public:
     /**
     * @brief Ctor
     */
-    CurlCommunicator(int timeOutSec, int retries);
+    CurlCommunicator(string user, string pw, int timeOutSec, int retries);
 
     /**
     * @brief Dtor
@@ -57,6 +57,8 @@ private:
 
 	string m_URL;
 	string m_file;
+	string user_;
+	string pw_;
 	int m_retries;
 	int m_timeoutSec;
 	int m_retryCount;

@@ -10,8 +10,8 @@ CurlCommunicator::CurlCommunicator()
 /**
 * @brief Ctor
 */
-CurlCommunicator::CurlCommunicator(int timeOutSec, int retries) 
-	: m_retries(retries), m_timeoutSec(timeOutSec), m_retryCount(retries)
+CurlCommunicator::CurlCommunicator(string user, string pw, int timeOutSec, int retries) 
+	: user_(user), pw_(pw), m_retries(retries), m_timeoutSec(timeOutSec), m_retryCount(retries)
 {
 
 }
@@ -52,7 +52,7 @@ int CurlCommunicator::tryDownload(int tryCount)
 		using namespace curlpp::Options;
 		request.setOpt(new WriteFunction(functor));
 		request.setOpt(new Url(m_URL));
-		request.setOpt(new UserPwd("ftp622_4:Vp2V99p2q4"));
+		request.setOpt(new UserPwd(user_ + ":" + pw_));
 		request.setOpt(new Verbose(false));
 		request.setOpt(new NoProgress(false));
 		if(m_progress.m_complete > 0)

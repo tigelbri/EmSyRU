@@ -7,17 +7,26 @@ Logger EmSyRU::log_ = Logger();
 /**
 * @brief Ctor
 */
-EmSyRU::EmSyRU(string dlURL, string upURL, string env): 
-                  dlURL_(dlURL), upURL_(upURL), env_(env), up_("../" + packageFile_)
+EmSyRU::EmSyRU(string user, string dlURL, string pw, string env): 
+                  dlURL_(dlURL), up_(env_ + "../" + packageFile_)
 {
 	unsigned found = dlURL.find_last_of("/\\");
-    jobFile_ = dlURL.substr(found + 1, dlURL.size() - 1);
+	upURL_ = dlURL.substr(0, found+1);
+    //jobFile_ = dlURL.substr(found + 1, dlURL.size() - 1);
     log_ = Logger(logFile_);
+    //log_ = Logger();
 	ub_.setLogger(log_);
-	curli_ = CurlCommunicator(10, 20);
+	curli_ = CurlCommunicator(user, pw, 10, 20);
 	curli_.setLogger(log_);
 	up_.setLogger(log_);
-}
+	if(!env.compare(""))
+		env_ = ub_.getSymLink("/proc/self/exe");
+	else
+	   env_ = env;
+	if(!(env_.back() == '/'))
+		env_ += "/";
+	env_ += "Workbench/";
+}  
 
 /**
 * @brief Dtor
@@ -29,8 +38,16 @@ EmSyRU::~EmSyRU()
 
 int EmSyRU::update()
 {
+	// check for clean wokrspace
+	if(!prepareWorkbench())
+	{
+		log_ << "ERROR: Failed to get in clean state, going to delete workbench " << endl;
+		ub_.deleteDir(env_);
+		if(!prepareWorkbench())
+			return log_ << "ERROR: Failed create workbench" << endl ,0;
+	}
     log_ << "STATUS: Searching for jobs at URL: " << dlURL_ << endl;
-	int dlSuc = curli_.startDownload(dlURL_, jobFile_ );
+	int dlSuc = curli_.startDownload(dlURL_, env_ + "job.tar");
 	if(dlSuc == 0)
 	{
 		log_ << "STATUS: No jobs to do" << endl;
@@ -53,7 +70,7 @@ int EmSyRU::update()
 	string dec_file_name = string(filename) + ".dec";
 	string dec_dir_name = string(filename) + "_dec";*/
 	
-	int tarSuc = system(string("tar -xf job.tar -C " + jobDir_).c_str());
+	int tarSuc = system(string("tar -xf " + env_ + "job.tar -C " + env_).c_str());
 	if(tarSuc < 0)
 	{
 		log_ << "FATAL ERROR: Couldnt extract the decrypted files " << tarSuc << endl;
@@ -62,7 +79,7 @@ int EmSyRU::update()
 	}
 	log_ << "STATUS: File extraction finished " << endl;
 	std::vector<string> files;
-	string upPath = string(env_ + jobDir_ + "/");
+	string upPath = env_;
 	if(!ub_.getFiles(upPath, string(""), files))
 	{
 		log_ << "FATAL ERROR: Couldnt parse job files" << endl;
@@ -75,22 +92,23 @@ int EmSyRU::update()
 		string updateFile = f.substr(found + 1, f.size() - 1);
 		if(!updateFile.compare(jobFile_))
 		{
-			up_.update(string(env_ + jobDir_ + "/" + jobFile_));
+			up_.update(string(env_ + jobFile_));
 			uploadLog();
 			return 1;
 		}
 	} 
+	log_ << "FATAL ERROR: Couldnt find " << jobFile_ << " at path " << upPath << endl;
 	uploadLog();
-	log_ << "FATAL ERROR: Couldnt find Job.conf " << endl;
 	return 1;
 	
 }
 
 void EmSyRU::uploadLog()
 {
-	log_ << "Finished: Uploading logfile to " << upURL_ << endl;
+	log_ << "STATUS: Uploading logfile to " << upURL_ + logFile_ << endl;
 	if(!curli_.startUpload(upURL_ + logFile_, logFile_))
 		log_ << "ERROR: Failed to upload logfile " << endl;
+	//ub_.deleteDir(env_);:
 }
 
 int EmSyRU::findJobFile(string upPath, string& jobfile)
@@ -116,7 +134,7 @@ int EmSyRU::findJobFile(string upPath, string& jobfile)
 
 int EmSyRU::prepareWorkbench()
 {
-	if(ub_.createDir(jobDir_, 0755) < 0)
+	if(ub_.createDir(env_, 0755) < 0)
 	{
 		if(errno == EACCES)
 		{
@@ -128,9 +146,9 @@ int EmSyRU::prepareWorkbench()
 		{
 			log_ << "WARNING: No clean state going to process remaining tasks" << endl;
 			string jobfile;
-			if(findJobFile(env_ + jobDir_, jobFile_))
+			if(findJobFile(env_, jobFile_))
 			{
-				if(up_.update(env_ + jobDir_ + "/" + jobFile_))
+				if(up_.update(env_))
 					return 1;
 				else
 					return log_ << "ERROR: Failed completing old update aborting" << endl, 0;

@@ -325,7 +325,7 @@ int Updater::parseUpdate(string updateFile, std::vector<Job>& jobs)
 				new_job.command_ = "Add";
 				if(!parseAddPackage(file))
 					return 0;
-				auto revIt = packageMap_.rbegin();
+				auto revIt = addMap_.rbegin();
 				new_job.name_ = revIt->second.name_;
 			    jobs.push_back(new_job);
 			}
@@ -398,11 +398,19 @@ int Updater::doAddJob(Job& addJob)
 				pack.env1_ = pack.env1_ + "/";
 		if(!ub_.mvDir(updatePath_ + pack.name_ + "/", pack.env1_))
 			return log_ << "ERROR: Failed to move new packages files" << endl, 0;
-		int startSuc = system(string(pack.env1_ + pack.exec_).c_str());
-		if(startSuc >= 0)
+		int status = 100;
+		if(fork() == 0)
+		{ 
 			log_ << "STATUS: Started executable" << endl;
+			printf("I'm the child process.\n");
+			status = system(string(pack.env1_ + pack.exec_).c_str());
+			exit(0);
+		}
 		else
-			return log_ << "ERROR: System couldnt launch new executable, error code " << startSuc << endl, 0;
+		{
+			// Parent process will return a non-zero value from fork()
+			printf("Something is going on %d \n", status);
+		}
 		if(!pack.sanity_.compare("true") || !pack.sanity_.compare("TRUE") || 
 			!pack.sanity_.compare("True") || !pack.sanity_.compare("1") ||
 			!pack.sanity_.compare("Yes") || !pack.sanity_.compare("yes"))
@@ -560,11 +568,20 @@ int Updater::recoverExecutable(string recover_path, Package& package)
 	if(!(recover_path.back() == '/'))
 		recover_path = recover_path + "/";
 	string recover_exec = recover_path + package.exec_;
-	int recSuc = system(string(recover_exec + " &").c_str());
-	if(recSuc < 0)
-		return log_ << "FATAL ERROR: System couldnt launch recover executable: " + recover_exec + ", error code " << recSuc << endl, 0;
+	int status = 100;
+	if(fork() == 0)
+	{ 
+		log_ << "STATUS: Started recovery executable" << endl;
+		printf("I'm the child process.\n");
+		status = system(string(recover_exec + " &").c_str());
+		exit(0);
+	}
 	else
-		return 1;
+	{
+		// Parent process will return a non-zero value from fork()
+		printf("Something is going on %d \n", status);
+	}
+	return 1;
 }
 	
 	

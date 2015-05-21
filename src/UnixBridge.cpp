@@ -151,7 +151,7 @@ int UnixBridge::getFiles(string dir, string upFile, std::vector<string>& files)
 {
 	DIR* dirp = opendir(dir.c_str());
 	if(dirp == NULL)
-		return log_ << "ERROR: Couldnt find Updating files at path: " << dir << endl, 0;
+		return log_ << "ERROR: Couldnt find files at path: " << dir << endl, 0;
 	dirent* dp;
 	while ((dp = readdir(dirp)) != NULL)
 	{

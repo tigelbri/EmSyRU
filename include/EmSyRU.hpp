@@ -33,7 +33,7 @@ public:
     /**
     * @brief Ctor
     */
-    EmSyRU(string dlURL, string upURL, string env);
+    EmSyRU(string user, string dlURL, string pw, string env  = "");
     
 
     /**
@@ -54,11 +54,10 @@ private:
        
         string packageFile_ = "Packages.conf";
 		string logFile_ = "job.log";
-		string jobDir_ = "Workbench";
 		string dlURL_;
 		string upURL_;
 		string env_;
-		string jobFile_;
+		string jobFile_ = "Job.conf";
         Updater  up_;
         UnixBridge ub_;
 		CurlCommunicator curli_;
