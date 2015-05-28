@@ -68,13 +68,10 @@ set(UPDATER_SOURCES
 
 add_executable(EmSyRU ${UPDATER_SOURCES})
 
-#add_executable(CryptoFile src/crypto-file-example src/Crypto.cpp )
-
 ###############################################################################
 # External library dependencys
 ###############################################################################
 
-#target_link_libraries(CryptoFile ressl-crypto)
-target_link_libraries(EmSyRU ressl-crypto curl curlpp)
+target_link_libraries(EmSyRU curl curlpp)
 
 

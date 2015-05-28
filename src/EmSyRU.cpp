@@ -26,8 +26,6 @@
 //## OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "EmSyRU.hpp"
-#include "Crypto.h"
-#include "Decrypter.h"
 
 Logger EmSyRU::log_ = Logger();
 
