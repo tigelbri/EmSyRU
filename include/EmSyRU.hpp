@@ -84,7 +84,8 @@ private:
 		string dlURL_;
 		string upURL_;
 		string env_;
-		string jobFile_ = "Job.conf";
+		string jobFile;
+		string jobConfFile_ = "Job.conf";
         Updater  up_;
         UnixBridge ub_;
 		CurlCommunicator curli_;
