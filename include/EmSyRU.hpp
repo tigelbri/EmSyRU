@@ -76,7 +76,7 @@ public:
 private:
 
         void uploadLog();
-        int findJobFile(string upPath, string& jobfile);
+        int findJobConfFile();
         int prepareWorkbench();
        
         string packageFile_ = "Packages.conf";
@@ -84,7 +84,7 @@ private:
 		string dlURL_;
 		string upURL_;
 		string env_;
-		string jobFile;
+		string jobFile_;
 		string jobConfFile_ = "Job.conf";
         Updater  up_;
         UnixBridge ub_;

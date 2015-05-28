@@ -74,7 +74,7 @@ int EmSyRU::update()
 			return log_ << "ERROR: Failed create workbench" << endl ,0;
 	}
     log_ << "STATUS: Searching for jobs at URL: " << dlURL_ << endl;
-	int dlSuc = curli_.startDownload(dlURL_, env_ + jobFile);
+	int dlSuc = curli_.startDownload(dlURL_, env_ + jobFile_);
 	if(dlSuc == 0)
 	{
 		log_ << "STATUS: No jobs to do" << endl;
@@ -87,17 +87,12 @@ int EmSyRU::update()
 		return 1;
 	}
 	log_ << "STATUS: Downloaded new job file" << endl;
-    /*char* filename = argv[1];
-    char* keyfilename = argv[2];
-    char* keyivfilename = argv[3];
-    int length = 0;
-	if(decryptFile(filename, keyfilename, keyivfilename, length) != 1)
-		return up.log_ << "FATAL ERROR: Couldnt decrypt the update " << string(filename) << endl, 1;
-	up.log_ << "STATUS: Decrypted succsessfully the update " << string(filename) << " with " << length << " bytes " << endl;
-	string dec_file_name = string(filename) + ".dec";
-	string dec_dir_name = string(filename) + "_dec";*/
+    //char* filename = argv[1];
+    //char* keyfilename = argv[2];
+    //char* keyivfilename = argv[3];
+
 	
-	int tarSuc = system(string("tar -xf " + env_ + jobFile + " -C " + env_).c_str());
+	int tarSuc = system(string("tar -xf " + env_ + jobFile_ + " -C " + env_).c_str());
 	if(tarSuc < 0)
 	{
 		log_ << "FATAL ERROR: Couldnt extract the decrypted files " << tarSuc << endl;
@@ -105,26 +100,18 @@ int EmSyRU::update()
 		return 1;
 	}
 	log_ << "STATUS: File extraction finished " << endl;
-	std::vector<string> files;
-	string upPath = env_;
-	if(!ub_.getFiles(upPath, string(""), files))
+	
+	// Decryption
+
+	
+	if(findJobConfFile())
 	{
-		log_ << "FATAL ERROR: Couldnt parse job files" << endl;
-		uploadLog();
-		return 1;
-	}
-	for(string f : files)
-	{
-		unsigned found = f.find_last_of("/\\");
-		string updateFile = f.substr(found + 1, f.size() - 1);
-		if(!updateFile.compare(jobConfFile_))
-		{
-			up_.update(string(env_ + jobConfFile_));
-			uploadLog();
+		if(up_.update(jobConfFile_))
 			return 1;
-		}
-	} 
-	log_ << "FATAL ERROR: Couldnt find " << jobConfFile_ << " at path " << upPath << endl;
+		else
+			return log_ << "ERROR: Failed completing update" << endl, 0;
+	}
+	log_ << "FATAL ERROR: Couldnt find " << jobConfFile_ << " at path " << env_ << endl;
 	uploadLog();
 	return 1;
 	
@@ -138,10 +125,10 @@ void EmSyRU::uploadLog()
 	//ub_.deleteDir(env_);:
 }
 
-int EmSyRU::findjobConfFile(string upPath, string& jobConfFile)
+int EmSyRU::findJobConfFile()
 {
 	std::vector<string> files;
-	if(!ub_.getFiles(upPath, string(""), files))
+	if(!ub_.getFiles(env_, string(""), files))
 	{
 		log_ << "FATAL ERROR: Couldnt parse job files" << endl;
 		return 0;
@@ -149,10 +136,10 @@ int EmSyRU::findjobConfFile(string upPath, string& jobConfFile)
 	for(string f : files)
 	{
 		unsigned found = f.find_last_of("/\\");
-		jobConfFile = f.substr(found + 1, f.size() - 1);
+		string jobConfFile = f.substr(found + 1, f.size() - 1);
 		if(!jobConfFile.compare(jobConfFile_))
 		{
-			jobConfFile = string(upPath + "/" + jobConfFile_);
+			jobConfFile_ = string(env_ + jobConfFile);
 			return 1;
 		}
 	} 
@@ -172,10 +159,9 @@ int EmSyRU::prepareWorkbench()
 		if(errno == EEXIST)
 		{
 			log_ << "WARNING: No clean state going to process remaining tasks" << endl;
-			string jobConfFile;
-			if(findjobConfFile(env_, jobConfFile_))
+			if(findJobConfFile())
 			{
-				if(up_.update(env_))
+				if(up_.update(jobConfFile_))
 					return 1;
 				else
 					return log_ << "ERROR: Failed completing old update aborting" << endl, 0;
