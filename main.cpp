@@ -1,7 +1,7 @@
 
 #include "EmSyRU.hpp"
 
-string test_dlURL = "ftp622_4@ftp://ftp1.5hosting.com/job.tar";
+//string test_dlURL = "ftp622_4@ftp://ftp1.5hosting.com/job.tar";
 
 using std::cout;
 using std::endl;
@@ -24,8 +24,8 @@ int main(int argc, char **argv)
 		return printUsage(), 0;
     if(argc >= 3)
     {	
-		//string user_url = string(argv[1]);
-		string user_url = test_dlURL;
+		string user_url = string(argv[1]);
+		//string user_url = test_dlURL;
 		unsigned found = user_url.find_last_of("@");
 		if(found == 0xffffffff)
 		{
@@ -35,8 +35,8 @@ int main(int argc, char **argv)
 		}
 		user = user_url.substr(0, found);
 		dlURL = user_url.substr(found + 1, dlURL.size() - 1);
-		//pw = string(argv[2]);
-		pw = test_pw;
+		pw = string(argv[2]);
+		//pw = test_pw;
 	}
 	else
 		return printUsage(), 0;
