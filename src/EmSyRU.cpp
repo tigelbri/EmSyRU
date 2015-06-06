@@ -85,10 +85,6 @@ int EmSyRU::update()
 		return 1;
 	}
 	log_ << "STATUS: Downloaded new job file" << endl;
-    //char* filename = argv[1];
-    //char* keyfilename = argv[2];
-    //char* keyivfilename = argv[3];
-
 	
 	int tarSuc = system(string("tar -xf " + env_ + jobFile_ + " -C " + env_).c_str());
 	if(tarSuc < 0)
@@ -99,13 +95,13 @@ int EmSyRU::update()
 	}
 	log_ << "STATUS: File extraction finished " << endl;
 	
-	// Decryption
-
-	
 	if(findJobConfFile())
 	{
 		if(up_.update(jobConfFile_))
+		{
+			uploadLog();
 			return 1;
+		}
 		else
 			return log_ << "ERROR: Failed completing update" << endl, 0;
 	}
@@ -120,7 +116,7 @@ void EmSyRU::uploadLog()
 	log_ << "STATUS: Uploading logfile to " << upURL_ + logFile_ << endl;
 	if(!curli_.startUpload(upURL_ + logFile_, logFile_))
 		log_ << "ERROR: Failed to upload logfile " << endl;
-	//ub_.deleteDir(env_);:
+	ub_.deleteDir(env_);
 }
 
 int EmSyRU::findJobConfFile()
@@ -160,7 +156,12 @@ int EmSyRU::prepareWorkbench()
 			if(findJobConfFile())
 			{
 				if(up_.update(jobConfFile_))
+				{
+					// clean up workspace
+					ub_.deleteDir(env_);
+					prepareWorkbench();
 					return 1;
+				}
 				else
 					return log_ << "ERROR: Failed completing old update aborting" << endl, 0;
 			}

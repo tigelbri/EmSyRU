@@ -57,11 +57,18 @@ extern "C"
 				if (fgets(buf, sizeof(buf), fp) != NULL) {
 					/* check the first token in the file, the program name */
 					char* first = strtok(buf, " ");
-					if (!strcmp(first, name)) {
+					size_t name_len = strlen(name); 
+					size_t first_len = strlen(first);
+					char* arr = new char[name_len];
+					size_t i;
+					for(i = 0; i < name_len; i++)
+						arr[i] = first[first_len - name_len + i];
+					if (!strcmp(arr, name)) {
 						fclose(fp);
 						closedir(dir);
 						return (pid_t)lpid;
 					}
+					free(arr);
 				}
 				fclose(fp);
 			}
@@ -77,7 +84,6 @@ extern "C"
 	{
 		if (signum == SIGUSR1)
 		{
-			printf("Received SIGUSR1!\n");
 			SIGNALRECEIVED = 1;
 		}
 	}
@@ -95,7 +101,7 @@ Logger Updater::log_ = Logger();
 */
 Updater::Updater(string confFile): confFile_(confFile)
 {
-	
+
 }
 
 /**
@@ -109,7 +115,7 @@ Updater::~Updater()
 int Updater::update(string updateFile)
 {
 	//Initialize settings
-	sanityTimeSec_ = 10;
+	sanityTimeSec_ = 20;
 	//log_.setOutputFile("up.log");
 	parseConfig(confFile_);
 	if(packageMap_.size() == 0)
@@ -138,15 +144,6 @@ int Updater::update(string updateFile)
 	}
 	if(!writeConfig())
 		return 0;
-	/*for(auto it = packageMap_.begin(); it != packageMap_.end(); it++)
-	{
-		log_ << "Name: " << it->second.name_ << endl; 
-		log_ << "Version: " << it->second.version_ << endl; 
-		log_ << "Enviroment 1: " << it->second.env1_ << endl; 
-		log_ << "Enviroment 2: " << it->second.env2_ << endl; 
-		log_ << "Symbolic Link: " << it->second.symLink_ << endl; 
-		log_ << "Executable: " << it->second.exec_ << endl;
-	} */
 	return 1;
 }
 
@@ -425,18 +422,12 @@ int Updater::doAddJob(Job& addJob)
 				pack.env1_ = pack.env1_ + "/";
 		if(!ub_.mvDir(updatePath_ + pack.name_ + "/", pack.env1_))
 			return log_ << "ERROR: Failed to move new packages files" << endl, 0;
-		int status = 100;
+		int status = 0;
 		if(fork() == 0)
 		{ 
 			log_ << "STATUS: Started executable" << endl;
-			printf("I'm the child process.\n");
 			status = system(string(pack.env1_ + pack.exec_).c_str());
-			exit(0);
-		}
-		else
-		{
-			// Parent process will return a non-zero value from fork()
-			printf("Something is going on %d \n", status);
+			exit(status);
 		}
 		if(!pack.sanity_.compare("true") || !pack.sanity_.compare("TRUE") || 
 			!pack.sanity_.compare("True") || !pack.sanity_.compare("1") ||
@@ -454,7 +445,10 @@ int Updater::doAddJob(Job& addJob)
 				return 0;
 			}
 			else
+			{
+				SIGNALRECEIVED = 0;
 				log_ << "STATUS: Sanity check completed!" << endl;
+			}
 		}
 		// ### Bend the symbolic link to updated environment ###
 		log_ << "STATUS: Updating symbolic link " << pack.symLink_ << endl;
@@ -540,13 +534,12 @@ int Updater::doUpdateJob(Job& upJob)
 				}
 				else
 					log_ << "WARNING: Couldnt find running process ... starting new one" << endl;
-				int startSuc = system(string(copy_to_path + pack.exec_ + " &").c_str());
-				if(startSuc >= 0)
-					log_ << "STATUS: Started updated executable" << endl;
-				else
-				{
-					recoverExecutable(recover_path, pack);
-					return log_ << "ERROR: System couldnt launch updated executable, error code " << startSuc << endl, 0;
+				int status = 0;
+				if(fork() == 0)
+				{ 
+					log_ << "STATUS: Started executable" << endl;
+					status = system(string(copy_to_path + pack.exec_).c_str());
+					exit(status);
 				}
 				if(!pack.sanity_.compare("true") || !pack.sanity_.compare("TRUE") || 
 				!pack.sanity_.compare("True") || !pack.sanity_.compare("1") ||
@@ -595,18 +588,11 @@ int Updater::recoverExecutable(string recover_path, Package& package)
 	if(!(recover_path.back() == '/'))
 		recover_path = recover_path + "/";
 	string recover_exec = recover_path + package.exec_;
-	int status = 100;
 	if(fork() == 0)
 	{ 
-		log_ << "STATUS: Started recovery executable" << endl;
-		printf("I'm the child process.\n");
-		status = system(string(recover_exec + " &").c_str());
-		exit(0);
-	}
-	else
-	{
-		// Parent process will return a non-zero value from fork()
-		printf("Something is going on %d \n", status);
+		log_ << "STATUS: Starting recovery executable" << endl;
+		int suc = system(string(recover_exec + " &").c_str());
+		exit(suc);
 	}
 	return 1;
 }
