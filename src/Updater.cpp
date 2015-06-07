@@ -423,7 +423,8 @@ int Updater::doAddJob(Job& addJob)
 		if(!ub_.mvDir(updatePath_ + pack.name_ + "/", pack.env1_))
 			return log_ << "ERROR: Failed to move new packages files" << endl, 0;
 		int status = 0;
-		if(fork() == 0)
+		int chPid = fork();
+		if(chPid == 0)
 		{ 
 			log_ << "STATUS: Started executable" << endl;
 			status = system(string(pack.env1_ + pack.exec_).c_str());
@@ -441,6 +442,8 @@ int Updater::doAddJob(Job& addJob)
 			}
 			if(!SIGNALRECEIVED)
 			{
+				// kill corrupted process if running
+				kill(chPid, SIGKILL);
 				log_ << "ERROR: Sanity check failed with executable " << pack.exec_ << endl;
 				return 0;
 			}
@@ -535,7 +538,8 @@ int Updater::doUpdateJob(Job& upJob)
 				else
 					log_ << "WARNING: Couldnt find running process ... starting new one" << endl;
 				int status = 0;
-				if(fork() == 0)
+				int chPid = fork();
+				if(chPid == 0)
 				{ 
 					log_ << "STATUS: Started executable" << endl;
 					status = system(string(copy_to_path + pack.exec_).c_str());
@@ -555,6 +559,7 @@ int Updater::doUpdateJob(Job& upJob)
 					{
 						log_ << "ERROR: Sanity check failed with executable " << pack.exec_ << endl;
 						log_ << "STATUS: Starting recover version at environment: " << recover_path << endl;
+						kill(chPid, SIGKILL);
 						recoverExecutable(recover_path, pack);
 						return 0;
 					}
