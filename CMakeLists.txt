@@ -38,12 +38,12 @@ set( CMAKE_CXX_FLAGS_DEBUG   "-std=c++11 -g -O0 -Wall" )
 # IF(OpenGL_found) etc.
 ###############################################################################
 
-find_package(CURL REQUIRED)
+#find_package(CURL REQUIRED)
 
-if(CURL_FOUND)
-    link_directories(${CURL_LIBRARIES_DIRS})
-    include_directories(${CURL_INCLUDE_DIR})
-endif(CURL_FOUND)
+#if(CURL_FOUND)
+    #link_directories(${CURL_LIBRARIES_DIRS})
+    #include_directories(${CURL_INCLUDE_DIR})
+#endif(CURL_FOUND)
 
 ###############################################################################
 # Variable for the sources of the binary. In larger projects it is often a 
