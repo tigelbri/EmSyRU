@@ -115,8 +115,7 @@ Updater::~Updater()
 int Updater::update(string updateFile)
 {
 	//Initialize settings
-	sanityTimeSec_ = 20;
-	//log_.setOutputFile("up.log");
+	sanityTimeSec_ = 10;
 	parseConfig(confFile_);
 	if(packageMap_.size() == 0)
 		log_ << "ERROR: No Packages in file " << confFile_ << " found";
@@ -504,16 +503,18 @@ int Updater::doUpdateJob(Job& upJob)
 				return log_ << "ERROR: Couldnt find symbolic link " << pack.symLink_ << endl, 0;
 			string copy_to_path;
 			string recover_path;
+			if(pack.env1_.back() == '/')
+				pack.env1_ = pack.env1_.substr(0, pack.env1_.size()-1);
 			// ### Set update path to the NOT running environment ###
 			if(!app_folder.compare(pack.env1_))
 			{
-				copy_to_path = pack.env1_;
-				recover_path = pack.env2_;
+				copy_to_path = pack.env2_;
+				recover_path = pack.env1_;
 			}
 			else
 			{
-				recover_path = pack.env1_;
-				copy_to_path = pack.env2_;
+				recover_path = pack.env2_;
+				copy_to_path = pack.env1_;
 			}
 			if(!(copy_to_path.back() == '/'))
 				copy_to_path = copy_to_path + "/";
