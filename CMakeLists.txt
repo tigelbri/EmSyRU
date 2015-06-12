@@ -26,8 +26,7 @@ link_directories("${CMAKE_SOURCE_DIR}/lib")
 # can be used to generate debug symbols for gdb. The release option uses
 # special optimization flags
 ###############################################################################
-
-set( CMAKE_CXX_FLAGS         "-std=c++11 -O3 -Wall" )
+set( CMAKE_CXX_FLAGS         "-std=c++11 -O3 -Wall " )
 set( CMAKE_CXX_FLAGS_RELEASE "-std=c++11 -O3 -msse3 -Wno-deprecated-declarations -Wno-unused -Wcpp" )
 set( CMAKE_CXX_FLAGS_DEBUG   "-std=c++11 -g -O0 -Wall" )
 
@@ -41,8 +40,8 @@ set( CMAKE_CXX_FLAGS_DEBUG   "-std=c++11 -g -O0 -Wall" )
 #find_package(CURL REQUIRED)
 
 #if(CURL_FOUND)
-    #link_directories(${CURL_LIBRARIES_DIRS})
-    #include_directories(${CURL_INCLUDE_DIR})
+ #   link_directories(${CURL_LIBRARIES_DIRS})
+  #  include_directories(${CURL_INCLUDE_DIR})
 #endif(CURL_FOUND)
 
 ###############################################################################
@@ -61,6 +60,18 @@ set(UPDATER_SOURCES
 	src/CurlCommunicator.cpp
 	src/UnixBridge.cpp
 	src/EmSyRU.cpp
+        src/curlpp/Easy.cpp
+        src/curlpp/cURLpp.cpp
+        src/curlpp/Exception.cpp 
+        src/curlpp/Info.cpp
+        src/curlpp/Multi.cpp
+        src/curlpp/OptionBase.cpp
+        src/curlpp/Options.cpp
+        src/curlpp/Form.cpp
+        src/curlpp/internal/CurlHandle.cpp
+        src/curlpp/internal/OptionList.cpp
+        src/curlpp/internal/OptionSetter.cpp
+        src/curlpp/internal/SList.cpp
 )
 
 ###############################################################################
@@ -73,6 +84,6 @@ add_executable(EmSyRU ${UPDATER_SOURCES})
 # External library dependencys
 ###############################################################################
 
-target_link_libraries(EmSyRU curl curlpp)
+target_link_libraries(EmSyRU curl)
 
 

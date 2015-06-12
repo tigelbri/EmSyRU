@@ -14,7 +14,8 @@ REQUIREMENTS
 
 - GCC 4.8
 - CMake 2.8
-- CurlPP 0.2
+- CurlDev (debian libcurl4-openssl-dev)
+- CurlPP 0.2 (debian libcurlpp-dev)
 
 
 
