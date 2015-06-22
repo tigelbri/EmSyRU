@@ -35,6 +35,7 @@
 #ifndef CurlCommunicator_HPP
 #define CurlCommunicator_HPP
 
+
 #include <curlpp/cURLpp.hpp>
 #include <curlpp/Easy.hpp>
 #include <curlpp/Options.hpp>
@@ -54,7 +55,7 @@ using std::endl;
 using std::ifstream;
 using std::ofstream;
 using namespace curlpp::options;
-
+//#define CURL_SIZEOF_LONG 4
 
 /**
  * @brief   Pacakge class with all relevant package informations

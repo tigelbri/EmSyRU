@@ -1,4 +1,3 @@
-
 #include "EmSyRU.hpp"
 
 //string test_dlURL = "ftp622_4@ftp://ftp1.5hosting.com/job.tar";

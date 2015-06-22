@@ -61,6 +61,18 @@ set(UPDATER_SOURCES
 	src/CurlCommunicator.cpp
 	src/UnixBridge.cpp
 	src/EmSyRU.cpp
+        src/curlpp/Easy.cpp
+        src/curlpp/cURLpp.cpp
+        src/curlpp/Exception.cpp 
+        src/curlpp/Info.cpp
+        src/curlpp/Multi.cpp
+        src/curlpp/OptionBase.cpp
+        src/curlpp/Options.cpp
+        src/curlpp/Form.cpp
+        src/curlpp/internal/CurlHandle.cpp
+        src/curlpp/internal/OptionList.cpp
+        src/curlpp/internal/OptionSetter.cpp
+        src/curlpp/internal/SList.cpp
 )
 
 ###############################################################################
@@ -73,6 +85,6 @@ add_executable(EmSyRU ${UPDATER_SOURCES})
 # External library dependencys
 ###############################################################################
 
-target_link_libraries(EmSyRU curl curlpp)
+target_link_libraries(EmSyRU curl)
 
 
