@@ -442,7 +442,7 @@ int Updater::doAddJob(Job& addJob)
 			if(!SIGNALRECEIVED)
 			{
 				// kill corrupted process if running
-				kill(chPid, SIGKILL);
+				kill(chPid, SIGTERM);
 				log_ << "ERROR: Sanity check failed with executable " << pack.exec_ << endl;
 				return 0;
 			}
@@ -560,7 +560,7 @@ int Updater::doUpdateJob(Job& upJob)
 					{
 						log_ << "ERROR: Sanity check failed with executable " << pack.exec_ << endl;
 						log_ << "STATUS: Starting recover version at environment: " << recover_path << endl;
-						kill(chPid, SIGKILL);
+						kill(chPid, SIGTERM);
 						recoverExecutable(recover_path, pack);
 						return 0;
 					}
