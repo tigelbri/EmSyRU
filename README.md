@@ -21,6 +21,8 @@ The EmSyRU downloads the given Job File and automaticlly checks the Packages
 versions and update them. 
 A Report of the updating process is been uploaded back again.
 
+![alt tag](https://raw.githubusercontent.com/tigelbri/EmSyRU/master/documentation/workflow.png)
+
 Copyright (c) 2015, Tristan Igelbrink
 
 This Application uses the CurlPP Packages (Copyright (c) <2002-2009> <Jean-Philippe Barrette-LaPierre>)
