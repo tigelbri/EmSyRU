@@ -1,0 +1,150 @@
+\hypertarget{classCurlCommunicator}{\section{Curl\-Communicator Class Reference}
+\label{classCurlCommunicator}\index{Curl\-Communicator@{Curl\-Communicator}}
+}
+
+
+Class for communication This class provides the communication for downloading job files or uploading log files.  
+
+
+
+
+{\ttfamily \#include $<$Curl\-Communicator.\-hpp$>$}
+
+
+
+Collaboration diagram for Curl\-Communicator\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classCurlCommunicator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCurlCommunicator_a67f50f315cc1e99042637aa67dd14c03}{\hyperlink{classCurlCommunicator_a67f50f315cc1e99042637aa67dd14c03}{Curl\-Communicator} ()}\label{classCurlCommunicator_a67f50f315cc1e99042637aa67dd14c03}
+
+\begin{DoxyCompactList}\small\item\em Ctor. \end{DoxyCompactList}\item 
+\hyperlink{classCurlCommunicator_a54f8093da6f396f88015f000f96e537a}{Curl\-Communicator} (string user, string pw, int time\-Out\-Sec, int retries)
+\begin{DoxyCompactList}\small\item\em Ctor. \end{DoxyCompactList}\item 
+\hypertarget{classCurlCommunicator_ae6280940aaed63c9d8d4da2a930eb719}{\hyperlink{classCurlCommunicator_ae6280940aaed63c9d8d4da2a930eb719}{$\sim$\-Curl\-Communicator} ()}\label{classCurlCommunicator_ae6280940aaed63c9d8d4da2a930eb719}
+
+\begin{DoxyCompactList}\small\item\em Dtor. \end{DoxyCompactList}\item 
+int \hyperlink{classCurlCommunicator_a33dd04c8d5075d13cba92090f8482211}{start\-Upload} (string url, string save\-Filename)
+\begin{DoxyCompactList}\small\item\em Upload a given file to the given url. \end{DoxyCompactList}\item 
+int \hyperlink{classCurlCommunicator_a02e733609c88dbf00811b3d61d83abae}{start\-Download} (string url, string save\-Filename)
+\begin{DoxyCompactList}\small\item\em Downloads a requested file from the given url. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classCurlCommunicator_a006af85c4b542cad443f5f96414e4765}{set\-Logger} (\hyperlink{classLogger}{Logger} \&log)
+\begin{DoxyCompactList}\small\item\em Setter for logger. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCurlCommunicator_a549e31b1922eb221203619dc2c0d5c4e}{static \hyperlink{classLogger}{Logger} \hyperlink{classCurlCommunicator_a549e31b1922eb221203619dc2c0d5c4e}{log\-\_\-} = \hyperlink{classLogger}{Logger}()}\label{classCurlCommunicator_a549e31b1922eb221203619dc2c0d5c4e}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classLogger}{Logger} for tracking and generating report to upload. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for communication This class provides the communication for downloading job files or uploading log files. 
+
+To communicate with the server the curl libary is used 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCurlCommunicator_a54f8093da6f396f88015f000f96e537a}{\index{Curl\-Communicator@{Curl\-Communicator}!Curl\-Communicator@{Curl\-Communicator}}
+\index{Curl\-Communicator@{Curl\-Communicator}!CurlCommunicator@{Curl\-Communicator}}
+\subsubsection[{Curl\-Communicator}]{\setlength{\rightskip}{0pt plus 5cm}Curl\-Communicator\-::\-Curl\-Communicator (
+\begin{DoxyParamCaption}
+\item[{string}]{user, }
+\item[{string}]{pw, }
+\item[{int}]{time\-Out\-Sec, }
+\item[{int}]{retries}
+\end{DoxyParamCaption}
+)}}\label{classCurlCommunicator_a54f8093da6f396f88015f000f96e537a}
+
+
+Ctor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & with user name \\
+\hline
+{\em string} & with password \\
+\hline
+{\em int} & with time for connection timeout in seconds \\
+\hline
+{\em int} & with amount of retries to make before say connection falied \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCurlCommunicator_a006af85c4b542cad443f5f96414e4765}{\index{Curl\-Communicator@{Curl\-Communicator}!set\-Logger@{set\-Logger}}
+\index{set\-Logger@{set\-Logger}!CurlCommunicator@{Curl\-Communicator}}
+\subsubsection[{set\-Logger}]{\setlength{\rightskip}{0pt plus 5cm}static void Curl\-Communicator\-::set\-Logger (
+\begin{DoxyParamCaption}
+\item[{{\bf Logger} \&}]{log}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classCurlCommunicator_a006af85c4b542cad443f5f96414e4765}
+
+
+Setter for logger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classLogger}{Logger}} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCurlCommunicator_a02e733609c88dbf00811b3d61d83abae}{\index{Curl\-Communicator@{Curl\-Communicator}!start\-Download@{start\-Download}}
+\index{start\-Download@{start\-Download}!CurlCommunicator@{Curl\-Communicator}}
+\subsubsection[{start\-Download}]{\setlength{\rightskip}{0pt plus 5cm}int Curl\-Communicator\-::start\-Download (
+\begin{DoxyParamCaption}
+\item[{string}]{url, }
+\item[{string}]{save\-Filename}
+\end{DoxyParamCaption}
+)}}\label{classCurlCommunicator_a02e733609c88dbf00811b3d61d83abae}
+
+
+Downloads a requested file from the given url. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & with url \\
+\hline
+{\em string} & with file to download to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int with succsess 1 or fail 0 
+\end{DoxyReturn}
+\hypertarget{classCurlCommunicator_a33dd04c8d5075d13cba92090f8482211}{\index{Curl\-Communicator@{Curl\-Communicator}!start\-Upload@{start\-Upload}}
+\index{start\-Upload@{start\-Upload}!CurlCommunicator@{Curl\-Communicator}}
+\subsubsection[{start\-Upload}]{\setlength{\rightskip}{0pt plus 5cm}int Curl\-Communicator\-::start\-Upload (
+\begin{DoxyParamCaption}
+\item[{string}]{url, }
+\item[{string}]{save\-Filename}
+\end{DoxyParamCaption}
+)}}\label{classCurlCommunicator_a33dd04c8d5075d13cba92090f8482211}
+
+
+Upload a given file to the given url. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & with url \\
+\hline
+{\em string} & with file to upload \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int with succsess 1 or fail 0 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{CurlCommunicator_8hpp}{Curl\-Communicator.\-hpp}\item 
+src/Curl\-Communicator.\-cpp\end{DoxyCompactItemize}

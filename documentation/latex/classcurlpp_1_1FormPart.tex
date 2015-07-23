@@ -1,0 +1,96 @@
+\hypertarget{classcurlpp_1_1FormPart}{\section{curlpp\-:\-:Form\-Part Class Reference}
+\label{classcurlpp_1_1FormPart}\index{curlpp\-::\-Form\-Part@{curlpp\-::\-Form\-Part}}
+}
+
+
+This class is the base representation of a post.  
+
+
+
+
+{\ttfamily \#include $<$Form.\-hpp$>$}
+
+
+
+Inheritance diagram for curlpp\-:\-:Form\-Part\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{classcurlpp_1_1FormPart__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for curlpp\-:\-:Form\-Part\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classcurlpp_1_1FormPart__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcurlpp_1_1FormPart_a25c51c604a32d82d23d2955bb19e2e63}{Form\-Part} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em initialize the \hyperlink{classcurlpp_1_1FormPart}{Form\-Part}. \end{DoxyCompactList}\item 
+\hyperlink{classcurlpp_1_1FormPart_a839ac0adc867bf96ef0b764d8d216850}{Form\-Part} (const std\-::string \&name)
+\begin{DoxyCompactList}\small\item\em initialize the \hyperlink{classcurlpp_1_1FormPart}{Form\-Part}. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1FormPart_a6005cbed5b7e266e280b489bba26e4d1}{virtual \hyperlink{classcurlpp_1_1FormPart}{Form\-Part} $\ast$ {\bfseries clone} () const =0}\label{classcurlpp_1_1FormPart_a6005cbed5b7e266e280b489bba26e4d1}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1FormPart_ae4f52f30aa0ad2e4cf0a44e6a754b306}{virtual void \hyperlink{classcurlpp_1_1FormPart_ae4f52f30aa0ad2e4cf0a44e6a754b306}{add} (\-::curl\-\_\-httppost $\ast$$\ast$first,\-::curl\-\_\-httppost $\ast$$\ast$last)=0}\label{classcurlpp_1_1FormPart_ae4f52f30aa0ad2e4cf0a44e6a754b306}
+
+\begin{DoxyCompactList}\small\item\em it will add himself to the curl\-\_\-httppost $\ast$ first. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1FormPart_a7aa178e7bd1b9322c0a469705e0b6fe5}{const std\-::string \hyperlink{classcurlpp_1_1FormPart_a7aa178e7bd1b9322c0a469705e0b6fe5}{m\-Name}}\label{classcurlpp_1_1FormPart_a7aa178e7bd1b9322c0a469705e0b6fe5}
+
+\begin{DoxyCompactList}\small\item\em Contain the name of the field. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1FormPart_a12d2180adc694d000dab9af5522a6283}{class {\bfseries Http\-Post}}\label{classcurlpp_1_1FormPart_a12d2180adc694d000dab9af5522a6283}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is the base representation of a post. 
+
+You need to inherit from it to define a type of post. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcurlpp_1_1FormPart_a25c51c604a32d82d23d2955bb19e2e63}{\index{curlpp\-::\-Form\-Part@{curlpp\-::\-Form\-Part}!Form\-Part@{Form\-Part}}
+\index{Form\-Part@{Form\-Part}!curlpp::FormPart@{curlpp\-::\-Form\-Part}}
+\subsubsection[{Form\-Part}]{\setlength{\rightskip}{0pt plus 5cm}curlpp\-::\-Form\-Part\-::\-Form\-Part (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{classcurlpp_1_1FormPart_a25c51c604a32d82d23d2955bb19e2e63}
+
+
+initialize the \hyperlink{classcurlpp_1_1FormPart}{Form\-Part}. 
+
+\char`\"{}name\char`\"{} is the name of the field. \hypertarget{classcurlpp_1_1FormPart_a839ac0adc867bf96ef0b764d8d216850}{\index{curlpp\-::\-Form\-Part@{curlpp\-::\-Form\-Part}!Form\-Part@{Form\-Part}}
+\index{Form\-Part@{Form\-Part}!curlpp::FormPart@{curlpp\-::\-Form\-Part}}
+\subsubsection[{Form\-Part}]{\setlength{\rightskip}{0pt plus 5cm}curlpp\-::\-Form\-Part\-::\-Form\-Part (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{classcurlpp_1_1FormPart_a839ac0adc867bf96ef0b764d8d216850}
+
+
+initialize the \hyperlink{classcurlpp_1_1FormPart}{Form\-Part}. 
+
+\char`\"{}name\char`\"{} is the name of the field. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/curlpp/Form.\-hpp\item 
+src/curlpp/Form.\-cpp\end{DoxyCompactItemize}

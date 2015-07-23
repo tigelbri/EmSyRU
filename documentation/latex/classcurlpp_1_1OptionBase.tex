@@ -1,0 +1,70 @@
+\hypertarget{classcurlpp_1_1OptionBase}{\section{curlpp\-:\-:Option\-Base Class Reference}
+\label{classcurlpp_1_1OptionBase}\index{curlpp\-::\-Option\-Base@{curlpp\-::\-Option\-Base}}
+}
+
+
+This is the parent of the curlpp\-::option class.  
+
+
+
+
+{\ttfamily \#include $<$Option\-Base.\-hpp$>$}
+
+
+
+Inheritance diagram for curlpp\-:\-:Option\-Base\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcurlpp_1_1OptionBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for curlpp\-:\-:Option\-Base\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classcurlpp_1_1OptionBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1OptionBase_adfd48c8371938134a028146d1980e82b}{{\bfseries Option\-Base} (C\-U\-R\-Loption option)}\label{classcurlpp_1_1OptionBase_adfd48c8371938134a028146d1980e82b}
+
+\item 
+\hypertarget{classcurlpp_1_1OptionBase_a9bad6d1c34bdc65bdee07014f88ffcc4}{virtual \hyperlink{classcurlpp_1_1OptionBase_a9bad6d1c34bdc65bdee07014f88ffcc4}{$\sim$\-Option\-Base} ()}\label{classcurlpp_1_1OptionBase_a9bad6d1c34bdc65bdee07014f88ffcc4}
+
+\begin{DoxyCompactList}\small\item\em Base class needs virtual destructor. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1OptionBase_aca2d80b6f3ab9fd59946c8f0580962ea}{virtual bool \hyperlink{classcurlpp_1_1OptionBase_aca2d80b6f3ab9fd59946c8f0580962ea}{operator$<$} (const \hyperlink{classcurlpp_1_1OptionBase}{Option\-Base} \&rhs) const }\label{classcurlpp_1_1OptionBase_aca2d80b6f3ab9fd59946c8f0580962ea}
+
+\begin{DoxyCompactList}\small\item\em See curlpp\-::option\-::operator$<$ for documentation. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1OptionBase_a55db7596ba57a679538c14adf5c680b4}{virtual \hyperlink{classcurlpp_1_1OptionBase}{Option\-Base} $\ast$ \hyperlink{classcurlpp_1_1OptionBase_a55db7596ba57a679538c14adf5c680b4}{clone} () const =0}\label{classcurlpp_1_1OptionBase_a55db7596ba57a679538c14adf5c680b4}
+
+\begin{DoxyCompactList}\small\item\em return a copy of the current option. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1OptionBase_ae3bb870443388b2143280d6432448ce9}{C\-U\-R\-Loption \hyperlink{classcurlpp_1_1OptionBase_ae3bb870443388b2143280d6432448ce9}{get\-Option} () const }\label{classcurlpp_1_1OptionBase_ae3bb870443388b2143280d6432448ce9}
+
+\begin{DoxyCompactList}\small\item\em return the libcurl option. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1OptionBase_a6dfedf51cd176e02b46e0e2a2e8fa775}{virtual void \hyperlink{classcurlpp_1_1OptionBase_a6dfedf51cd176e02b46e0e2a2e8fa775}{update\-Me\-To\-Option} (const \hyperlink{classcurlpp_1_1OptionBase}{Option\-Base} \&other)=0}\label{classcurlpp_1_1OptionBase_a6dfedf51cd176e02b46e0e2a2e8fa775}
+
+\begin{DoxyCompactList}\small\item\em will update the value of the option with the value of the option passed is argument. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1OptionBase_afb0c70db0e956992caa731031ec3c825}{virtual void \hyperlink{classcurlpp_1_1OptionBase_afb0c70db0e956992caa731031ec3c825}{update\-Handle\-To\-Me} (\hyperlink{classcurlpp_1_1internal_1_1CurlHandle}{internal\-::\-Curl\-Handle} $\ast$handle) const =0}\label{classcurlpp_1_1OptionBase_afb0c70db0e956992caa731031ec3c825}
+
+\begin{DoxyCompactList}\small\item\em will call the actual libcurl option function with the value we got on the handle. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1OptionBase_afa192d6d315eb4cc09ab9002a229c564}{virtual void \hyperlink{classcurlpp_1_1OptionBase_afa192d6d315eb4cc09ab9002a229c564}{clear} ()=0}\label{classcurlpp_1_1OptionBase_afa192d6d315eb4cc09ab9002a229c564}
+
+\begin{DoxyCompactList}\small\item\em this function will reset the option value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the parent of the curlpp\-::option class. 
+
+This is only used to be able to stock a list of options. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/curlpp/Option\-Base.\-hpp\item 
+src/curlpp/Option\-Base.\-cpp\end{DoxyCompactItemize}

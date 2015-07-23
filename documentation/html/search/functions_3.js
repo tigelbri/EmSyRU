@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['file',['File',['../classcurlpp_1_1FormParts_1_1File.html#a279297fcb9d6f362d432d22363107812',1,'curlpp::FormParts::File::File(const char *name, const char *filename)'],['../classcurlpp_1_1FormParts_1_1File.html#a7fd7447d8a4df5d9533ebeb5f3790235',1,'curlpp::FormParts::File::File(const char *name, const char *filename, const char *contentType)'],['../classcurlpp_1_1FormParts_1_1File.html#af9054c6b96d284b1ef6dd086b9122b51',1,'curlpp::FormParts::File::File(const std::string &amp;name, const std::string &amp;filename)'],['../classcurlpp_1_1FormParts_1_1File.html#ac961a43be0e8f224f06f71f83bff31fd',1,'curlpp::FormParts::File::File(const std::string &amp;name, const std::string &amp;filename, const std::string &amp;contentType)']]],
+  ['formpart',['FormPart',['../classcurlpp_1_1FormPart.html#a25c51c604a32d82d23d2955bb19e2e63',1,'curlpp::FormPart::FormPart(const char *name)'],['../classcurlpp_1_1FormPart.html#a839ac0adc867bf96ef0b764d8d216850',1,'curlpp::FormPart::FormPart(const std::string &amp;name)']]]
+];

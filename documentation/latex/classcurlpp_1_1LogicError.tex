@@ -1,0 +1,52 @@
+\hypertarget{classcurlpp_1_1LogicError}{\section{curlpp\-:\-:Logic\-Error Class Reference}
+\label{classcurlpp_1_1LogicError}\index{curlpp\-::\-Logic\-Error@{curlpp\-::\-Logic\-Error}}
+}
+
+
+This class is a parent to all curlpp's Runtime\-Errors.  
+
+
+
+
+{\ttfamily \#include $<$Exception.\-hpp$>$}
+
+
+
+Inheritance diagram for curlpp\-:\-:Logic\-Error\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classcurlpp_1_1LogicError__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for curlpp\-:\-:Logic\-Error\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classcurlpp_1_1LogicError__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1LogicError_a7e669f34fbb8d38de44db338d3cef4fe}{{\bfseries Logic\-Error} (const char $\ast$reason)}\label{classcurlpp_1_1LogicError_a7e669f34fbb8d38de44db338d3cef4fe}
+
+\item 
+\hypertarget{classcurlpp_1_1LogicError_aa60cf8ba5dfe9f072af9709a666ae5f8}{{\bfseries Logic\-Error} (const std\-::string \&string)}\label{classcurlpp_1_1LogicError_aa60cf8ba5dfe9f072af9709a666ae5f8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is a parent to all curlpp's Runtime\-Errors. 
+
+This class takes a const std\-::string \& as argument for it's parent\-: std\-::runtime\-\_\-errors. This class is thrown when curlpp is encountering an error, but for logic considerations, \char`\"{}predictable\char`\"{} by the library user. Predictable means that the library user is missusing the library. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/curlpp/Exception.\-hpp\item 
+src/curlpp/Exception.\-cpp\end{DoxyCompactItemize}

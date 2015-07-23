@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classutilspp_1_1PrivateMembers_1_1LifetimeTracker.html" title="Helper class for utils::setLongevity. " alt="" coords="5,11,168,53"/>
+<area shape="rect" id="node2" href="$classutilspp_1_1PrivateMembers_1_1ConcreteLifetimeTracker.html" title="Concrete lifetime tracker for objects of type T. " alt="" coords="216,4,389,60"/>
+</map>

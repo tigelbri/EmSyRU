@@ -1,0 +1,7 @@
+<map id="include/Timestamp.hpp" name="include/Timestamp.hpp">
+<area shape="rect" id="node2" href="$Logger_8hpp.html" title="Logger class for report generation. " alt="" coords="129,80,259,107"/>
+<area shape="rect" id="node5" href="$Updater_8hpp.html" title="Package class for holding and controling packages to update. " alt="" coords="5,229,144,256"/>
+<area shape="rect" id="node3" href="$CurlCommunicator_8hpp.html" title="class for communication " alt="" coords="219,229,420,256"/>
+<area shape="rect" id="node4" href="$EmSyRU_8hpp.html" title="Embedded System Remote Updater. " alt="" coords="177,304,324,331"/>
+<area shape="rect" id="node6" href="$UnixBridge_8hpp.html" title="Class for ineraction with unix systems. " alt="" coords="117,155,272,181"/>
+</map>

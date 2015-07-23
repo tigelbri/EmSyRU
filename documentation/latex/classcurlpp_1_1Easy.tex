@@ -1,0 +1,125 @@
+\hypertarget{classcurlpp_1_1Easy}{\section{curlpp\-:\-:Easy Class Reference}
+\label{classcurlpp_1_1Easy}\index{curlpp\-::\-Easy@{curlpp\-::\-Easy}}
+}
+
+
+\hyperlink{classcurlpp_1_1Easy}{Easy} class.  
+
+
+
+
+{\ttfamily \#include $<$Easy.\-hpp$>$}
+
+
+
+Collaboration diagram for curlpp\-:\-:Easy\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classcurlpp_1_1Easy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1Easy_a8c39568bc33b367d89337e216dc53acf}{\hyperlink{classcurlpp_1_1Easy_a8c39568bc33b367d89337e216dc53acf}{Easy} (std\-::auto\-\_\-ptr$<$ \hyperlink{classcurlpp_1_1internal_1_1CurlHandle}{internal\-::\-Curl\-Handle} $>$ handle)}\label{classcurlpp_1_1Easy_a8c39568bc33b367d89337e216dc53acf}
+
+\begin{DoxyCompactList}\small\item\em This allow to have a handle, which might have some option set, but we don't care about them. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1Easy_a3f6b472981811111365dbc537b06218d}{void \hyperlink{classcurlpp_1_1Easy_a3f6b472981811111365dbc537b06218d}{perform} ()}\label{classcurlpp_1_1Easy_a3f6b472981811111365dbc537b06218d}
+
+\begin{DoxyCompactList}\small\item\em it will call the curl\-\_\-easy\-\_\-perform function will all the options previously set for this handle. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1Easy_ae5b79592f7f01fab768f0dd733188e3b}{virtual void \hyperlink{classcurlpp_1_1Easy_ae5b79592f7f01fab768f0dd733188e3b}{set\-Opt} (const \hyperlink{classcurlpp_1_1OptionBase}{Option\-Base} \&option)}\label{classcurlpp_1_1Easy_ae5b79592f7f01fab768f0dd733188e3b}
+
+\begin{DoxyCompactList}\small\item\em This function will set the option value of the \hyperlink{classcurlpp_1_1OptionBase}{Option\-Base} to the handle. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1Easy_a576f15e11c3d691f389bffafab420f63}{virtual void \hyperlink{classcurlpp_1_1Easy_a576f15e11c3d691f389bffafab420f63}{set\-Opt} (std\-::auto\-\_\-ptr$<$ \hyperlink{classcurlpp_1_1OptionBase}{Option\-Base} $>$ option)}\label{classcurlpp_1_1Easy_a576f15e11c3d691f389bffafab420f63}
+
+\begin{DoxyCompactList}\small\item\em This function will set the option value of the \hyperlink{classcurlpp_1_1OptionBase}{Option\-Base} to the handle. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classcurlpp_1_1Easy_a64b45db88ad188cf25398b4ead5f13a5}{set\-Opt} (\hyperlink{classcurlpp_1_1OptionBase}{Option\-Base} $\ast$option)
+\begin{DoxyCompactList}\small\item\em This function will set the option value of the \hyperlink{classcurlpp_1_1OptionBase}{Option\-Base} to the handle. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1Easy_aa3b2f0c550d270403be29ad05f93e3b0}{{\footnotesize template$<$typename Option\-Trait $>$ }\\void \hyperlink{classcurlpp_1_1Easy_aa3b2f0c550d270403be29ad05f93e3b0}{set\-Opt} (typename Option\-Trait\-::\-Param\-Type)}\label{classcurlpp_1_1Easy_aa3b2f0c550d270403be29ad05f93e3b0}
+
+\begin{DoxyCompactList}\small\item\em This function will create \hyperlink{classcurlpp_1_1OptionTrait}{Option\-Trait} class with the value given and call virtual void \hyperlink{classcurlpp_1_1Easy_ae5b79592f7f01fab768f0dd733188e3b}{set\-Opt(const Option\-Base \& option)} with it. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1Easy_a627196122ee249d379302bc86b569e9b}{{\footnotesize template$<$typename Input\-Iterator $>$ }\\void \hyperlink{classcurlpp_1_1Easy_a627196122ee249d379302bc86b569e9b}{set\-Opt} (Input\-Iterator first, Input\-Iterator last)}\label{classcurlpp_1_1Easy_a627196122ee249d379302bc86b569e9b}
+
+\begin{DoxyCompactList}\small\item\em Setting options from custom container with curlpp options. \end{DoxyCompactList}\item 
+void \hyperlink{classcurlpp_1_1Easy_afb31f0536e0767f0016ed04fdb935b21}{get\-Opt} (\hyperlink{classcurlpp_1_1OptionBase}{Option\-Base} $\ast$option) const 
+\begin{DoxyCompactList}\small\item\em This function will get the current option value of the corresponding \hyperlink{classcurlpp_1_1OptionBase}{Option\-Base}. \end{DoxyCompactList}\item 
+void \hyperlink{classcurlpp_1_1Easy_a9103b1438874709c1ec42f430173edaf}{get\-Opt} (\hyperlink{classcurlpp_1_1OptionBase}{Option\-Base} \&option) const 
+\begin{DoxyCompactList}\small\item\em This function will get the current option value of the corresponding \hyperlink{classcurlpp_1_1OptionBase}{Option\-Base}. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1Easy_a2e9dcb9179225771a28e6acda748b750}{virtual void \hyperlink{classcurlpp_1_1Easy_a2e9dcb9179225771a28e6acda748b750}{reset} ()}\label{classcurlpp_1_1Easy_a2e9dcb9179225771a28e6acda748b750}
+
+\begin{DoxyCompactList}\small\item\em Get all options. \end{DoxyCompactList}\item 
+C\-U\-R\-L $\ast$ \hyperlink{classcurlpp_1_1Easy_af40b3ee39a944a728599176e9dece30e}{get\-Handle} () const 
+\begin{DoxyCompactList}\small\item\em This function will return the c\-U\-R\-L $\ast$ handle. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1Easy_acf38b0fd04b0b02fded31849f87bea43}{\hyperlink{classcurlpp_1_1internal_1_1CurlHandle}{internal\-::\-Curl\-Handle} \& {\bfseries get\-Curl\-Handle} ()}\label{classcurlpp_1_1Easy_acf38b0fd04b0b02fded31849f87bea43}
+
+\item 
+\hypertarget{classcurlpp_1_1Easy_a49fbfde3465fdd5f51a89f3e012fa6bb}{const \hyperlink{classcurlpp_1_1internal_1_1CurlHandle}{internal\-::\-Curl\-Handle} \& {\bfseries get\-Curl\-Handle} () const }\label{classcurlpp_1_1Easy_a49fbfde3465fdd5f51a89f3e012fa6bb}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1Easy_ae5b89291153dc90fe7e0204270d0c5af}{struct {\bfseries Info\-Getter}}\label{classcurlpp_1_1Easy_ae5b89291153dc90fe7e0204270d0c5af}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classcurlpp_1_1Easy}{Easy} class. 
+
+Detailed description. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcurlpp_1_1Easy_af40b3ee39a944a728599176e9dece30e}{\index{curlpp\-::\-Easy@{curlpp\-::\-Easy}!get\-Handle@{get\-Handle}}
+\index{get\-Handle@{get\-Handle}!curlpp::Easy@{curlpp\-::\-Easy}}
+\subsubsection[{get\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}C\-U\-R\-L $\ast$ curlpp\-::\-Easy\-::get\-Handle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcurlpp_1_1Easy_af40b3ee39a944a728599176e9dece30e}
+
+
+This function will return the c\-U\-R\-L $\ast$ handle. 
+
+D\-O N\-O\-T use this, unless you R\-E\-A\-L\-L\-Y know what you are doing. \hypertarget{classcurlpp_1_1Easy_afb31f0536e0767f0016ed04fdb935b21}{\index{curlpp\-::\-Easy@{curlpp\-::\-Easy}!get\-Opt@{get\-Opt}}
+\index{get\-Opt@{get\-Opt}!curlpp::Easy@{curlpp\-::\-Easy}}
+\subsubsection[{get\-Opt}]{\setlength{\rightskip}{0pt plus 5cm}void curlpp\-::\-Easy\-::get\-Opt (
+\begin{DoxyParamCaption}
+\item[{{\bf Option\-Base} $\ast$}]{option}
+\end{DoxyParamCaption}
+) const}}\label{classcurlpp_1_1Easy_afb31f0536e0767f0016ed04fdb935b21}
+
+
+This function will get the current option value of the corresponding \hyperlink{classcurlpp_1_1OptionBase}{Option\-Base}. 
+
+Note that if the option is not set, the option passed in parameter will be cleared. (See Option\-::get\-Opt for more details) \hypertarget{classcurlpp_1_1Easy_a9103b1438874709c1ec42f430173edaf}{\index{curlpp\-::\-Easy@{curlpp\-::\-Easy}!get\-Opt@{get\-Opt}}
+\index{get\-Opt@{get\-Opt}!curlpp::Easy@{curlpp\-::\-Easy}}
+\subsubsection[{get\-Opt}]{\setlength{\rightskip}{0pt plus 5cm}void curlpp\-::\-Easy\-::get\-Opt (
+\begin{DoxyParamCaption}
+\item[{{\bf Option\-Base} \&}]{option}
+\end{DoxyParamCaption}
+) const}}\label{classcurlpp_1_1Easy_a9103b1438874709c1ec42f430173edaf}
+
+
+This function will get the current option value of the corresponding \hyperlink{classcurlpp_1_1OptionBase}{Option\-Base}. 
+
+Note that if the option is not set, the option passed in parameter will be cleared. (See Option\-::get\-Opt for more details) \hypertarget{classcurlpp_1_1Easy_a64b45db88ad188cf25398b4ead5f13a5}{\index{curlpp\-::\-Easy@{curlpp\-::\-Easy}!set\-Opt@{set\-Opt}}
+\index{set\-Opt@{set\-Opt}!curlpp::Easy@{curlpp\-::\-Easy}}
+\subsubsection[{set\-Opt}]{\setlength{\rightskip}{0pt plus 5cm}void curlpp\-::\-Easy\-::set\-Opt (
+\begin{DoxyParamCaption}
+\item[{{\bf Option\-Base} $\ast$}]{option}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcurlpp_1_1Easy_a64b45db88ad188cf25398b4ead5f13a5}
+
+
+This function will set the option value of the \hyperlink{classcurlpp_1_1OptionBase}{Option\-Base} to the handle. 
+
+Note\-: be carefull when using this function, see curlpp\-::\-Option\-List\-::set\-Opt(\-Option\-Base $\ast$ option) function for more details. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/curlpp/Easy.\-hpp\item 
+include/curlpp/Easy.\-inl\item 
+src/curlpp/Easy.\-cpp\end{DoxyCompactItemize}

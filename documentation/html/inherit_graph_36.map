@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classcurlpp_1_1OptionBase.html" title="This is the parent of the curlpp::option class. " alt="" coords="5,56,139,83"/>
+<area shape="rect" id="node2" href="$classcurlpp_1_1Option.html" title="This class is representing an option that you set on a class. " alt="" coords="211,5,357,32"/>
+<area shape="rect" id="node3" href="$classcurlpp_1_1Option.html" title="curlpp::Option\&lt; bool \&gt;" alt="" coords="209,56,359,83"/>
+<area shape="rect" id="node6" href="$classcurlpp_1_1Option.html" title="curlpp::Option\&lt; OptionType \&gt;" alt="" coords="187,113,381,140"/>
+<area shape="rect" id="node4" href="$classcurlpp_1_1OptionTrait.html" title="curlpp::OptionTrait\l\&lt; bool, option \&gt;" alt="" coords="454,41,583,82"/>
+<area shape="rect" id="node5" href="$classcurlpp_1_1NoValueOptionTrait.html" title="This class is just a wrapper around curlpp::OptionTrait, in order to be able to have &quot;No value&quot; optio..." alt="" coords="656,41,835,82"/>
+<area shape="rect" id="node7" href="$classcurlpp_1_1NotAvailableOptionTrait.html" title="This class is used when the option is not implemented. " alt="" coords="430,106,607,147"/>
+<area shape="rect" id="node8" href="$classcurlpp_1_1OptionTrait.html" title="This class is just a wrapper around curlpp::Option, in order to be able to typedef Options..." alt="" coords="449,171,588,213"/>
+</map>

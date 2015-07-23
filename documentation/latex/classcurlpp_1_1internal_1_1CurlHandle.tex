@@ -1,0 +1,128 @@
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle}{\section{curlpp\-:\-:internal\-:\-:Curl\-Handle Class Reference}
+\label{classcurlpp_1_1internal_1_1CurlHandle}\index{curlpp\-::internal\-::\-Curl\-Handle@{curlpp\-::internal\-::\-Curl\-Handle}}
+}
+
+
+Wrapper for C\-U\-R\-L $\ast$ handle.  
+
+
+
+
+{\ttfamily \#include $<$Curl\-Handle.\-hpp$>$}
+
+
+
+Collaboration diagram for curlpp\-:\-:internal\-:\-:Curl\-Handle\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classcurlpp_1_1internal_1_1CurlHandle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_adb6fcf013135805a31c3dc065d0e61e7}{{\bfseries Curl\-Handle} (C\-U\-R\-L $\ast$handle)}\label{classcurlpp_1_1internal_1_1CurlHandle_adb6fcf013135805a31c3dc065d0e61e7}
+
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_a580b97234e3973eaa783272c2e12cded}{std\-::auto\-\_\-ptr$<$ \hyperlink{classcurlpp_1_1internal_1_1CurlHandle}{Curl\-Handle} $>$ {\bfseries clone} () const }\label{classcurlpp_1_1internal_1_1CurlHandle_a580b97234e3973eaa783272c2e12cded}
+
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_a9b2fa00ec86b7c6ea86068eed1ae4b71}{void \hyperlink{classcurlpp_1_1internal_1_1CurlHandle_a9b2fa00ec86b7c6ea86068eed1ae4b71}{perform} ()}\label{classcurlpp_1_1internal_1_1CurlHandle_a9b2fa00ec86b7c6ea86068eed1ae4b71}
+
+\begin{DoxyCompactList}\small\item\em Calls curl\-\_\-easy\-\_\-perform on the handle and throws exceptions on errors. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_ac884758256b2735eb2ab1f037c38ce9f}{void \hyperlink{classcurlpp_1_1internal_1_1CurlHandle_ac884758256b2735eb2ab1f037c38ce9f}{reset} ()}\label{classcurlpp_1_1internal_1_1CurlHandle_ac884758256b2735eb2ab1f037c38ce9f}
+
+\begin{DoxyCompactList}\small\item\em Simply calls curl\-\_\-easy\-\_\-reset on the handle. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_a715e437b50f34871318e8256d7c78765}{{\footnotesize template$<$typename Option\-Type $>$ }\\void \hyperlink{classcurlpp_1_1internal_1_1CurlHandle_a715e437b50f34871318e8256d7c78765}{option} (C\-U\-R\-Loption option, Option\-Type value)}\label{classcurlpp_1_1internal_1_1CurlHandle_a715e437b50f34871318e8256d7c78765}
+
+\begin{DoxyCompactList}\small\item\em Calls curl\-\_\-easy\-\_\-setopt on the option. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_af7cf67e4dfc41b2da23a6005b0f396d3}{{\footnotesize template$<$typename Option\-Type , C\-U\-R\-Loption option\-Type$>$ }\\void \hyperlink{classcurlpp_1_1internal_1_1CurlHandle_af7cf67e4dfc41b2da23a6005b0f396d3}{option} (Option\-Type value)}\label{classcurlpp_1_1internal_1_1CurlHandle_af7cf67e4dfc41b2da23a6005b0f396d3}
+
+\begin{DoxyCompactList}\small\item\em Calls curl\-\_\-easy\-\_\-setopt on the option. \end{DoxyCompactList}\item 
+C\-U\-R\-L $\ast$ \hyperlink{classcurlpp_1_1internal_1_1CurlHandle_a219dded6f057d576ec1a1eb76061e0c0}{get\-Handle} () const 
+\begin{DoxyCompactList}\small\item\em This function will return the C\-U\-R\-L $\ast$ handle. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classcurlpp_1_1internal_1_1CurlHandle_ad217ec54215cf880b474a1e1249b5f4e}{get\-Info} (C\-U\-R\-L\-I\-N\-F\-O info, T \&value) const 
+\begin{DoxyCompactList}\small\item\em Request internal information from the curl session with this function. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_ab4a680ad19c629823ed6baed2582f1b7}{{\footnotesize template$<$typename Functor\-Type $>$ }\\Functor\-Type\-::\-Result\-Type {\bfseries execute} (Functor\-Type functor, typename Functor\-Type\-::\-Param\-List params)}\label{classcurlpp_1_1internal_1_1CurlHandle_ab4a680ad19c629823ed6baed2582f1b7}
+
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_ac62f315ca3a5150786a06914b1858daa}{size\-\_\-t {\bfseries execute\-Write\-Functor} (char $\ast$buffer, size\-\_\-t size, size\-\_\-t nitems)}\label{classcurlpp_1_1internal_1_1CurlHandle_ac62f315ca3a5150786a06914b1858daa}
+
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_a848df273cfbb8cae7413a0e160707f37}{void {\bfseries set\-Write\-Functor} (\hyperlink{classutilspp_1_1Functor}{curlpp\-::types\-::\-Write\-Function\-Functor} functor)}\label{classcurlpp_1_1internal_1_1CurlHandle_a848df273cfbb8cae7413a0e160707f37}
+
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_ac7662650f40ad7fdb6fc8e95ff979fa9}{size\-\_\-t {\bfseries execute\-Header\-Functor} (char $\ast$buffer, size\-\_\-t size, size\-\_\-t nitems)}\label{classcurlpp_1_1internal_1_1CurlHandle_ac7662650f40ad7fdb6fc8e95ff979fa9}
+
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_a585ae1e9991534e48d073f56361ec5ff}{void {\bfseries set\-Header\-Functor} (\hyperlink{classutilspp_1_1Functor}{curlpp\-::types\-::\-Write\-Function\-Functor} functor)}\label{classcurlpp_1_1internal_1_1CurlHandle_a585ae1e9991534e48d073f56361ec5ff}
+
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_a34a51c2a15f08b9643025801184738eb}{size\-\_\-t {\bfseries execute\-Read\-Functor} (char $\ast$buffer, size\-\_\-t size, size\-\_\-t nitems)}\label{classcurlpp_1_1internal_1_1CurlHandle_a34a51c2a15f08b9643025801184738eb}
+
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_ae116674f2a89956247d5cf85737d47de}{void {\bfseries set\-Read\-Functor} (\hyperlink{classutilspp_1_1Functor}{curlpp\-::types\-::\-Read\-Function\-Functor} functor)}\label{classcurlpp_1_1internal_1_1CurlHandle_ae116674f2a89956247d5cf85737d47de}
+
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_a86621767b2fbb1343ceac9dbe3b2a07b}{int {\bfseries execute\-Progress\-Functor} (double dltotal, double dlnow, double ultotal, double ulnow)}\label{classcurlpp_1_1internal_1_1CurlHandle_a86621767b2fbb1343ceac9dbe3b2a07b}
+
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_abda84c7e8f6e1d92de16027f2e30fdcd}{void {\bfseries set\-Progress\-Functor} (\hyperlink{classutilspp_1_1Functor}{curlpp\-::types\-::\-Progress\-Function\-Functor} functor)}\label{classcurlpp_1_1internal_1_1CurlHandle_abda84c7e8f6e1d92de16027f2e30fdcd}
+
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_a1de5d35d03a2400e21bfd5b3e4f331e6}{int {\bfseries execute\-Debug\-Functor} (curl\-\_\-infotype, char $\ast$, size\-\_\-t)}\label{classcurlpp_1_1internal_1_1CurlHandle_a1de5d35d03a2400e21bfd5b3e4f331e6}
+
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_abe1061232803c541f99c446d8d6a1edd}{void {\bfseries set\-Debug\-Functor} (\hyperlink{classutilspp_1_1Functor}{curlpp\-::types\-::\-Debug\-Function\-Functor} functor)}\label{classcurlpp_1_1internal_1_1CurlHandle_abe1061232803c541f99c446d8d6a1edd}
+
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_a8e3ef0099fd8dd1d0c4c342479fa5edc}{C\-U\-R\-Lcode {\bfseries execute\-Ssl\-Ctx\-Functor} (void $\ast$ssl\-\_\-ctx)}\label{classcurlpp_1_1internal_1_1CurlHandle_a8e3ef0099fd8dd1d0c4c342479fa5edc}
+
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_a01ff1b85447df61c5cf01ce969b1f86a}{void {\bfseries set\-Ssl\-Ctx\-Functor} (\hyperlink{classutilspp_1_1Functor}{curlpp\-::types\-::\-Ssl\-Ctx\-Function\-Functor} functor)}\label{classcurlpp_1_1internal_1_1CurlHandle_a01ff1b85447df61c5cf01ce969b1f86a}
+
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_ac84ef815b10c99f21e48b59988e9801c}{void {\bfseries set\-Exception} (\hyperlink{classcurlpp_1_1CallbackExceptionBase}{curlpp\-::\-Callback\-Exception\-Base} $\ast$e)}\label{classcurlpp_1_1internal_1_1CurlHandle_ac84ef815b10c99f21e48b59988e9801c}
+
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_af75c10e8106f51806e7347a51d8824c8}{void {\bfseries throw\-Exception} ()}\label{classcurlpp_1_1internal_1_1CurlHandle_af75c10e8106f51806e7347a51d8824c8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wrapper for C\-U\-R\-L $\ast$ handle. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcurlpp_1_1internal_1_1CurlHandle_a219dded6f057d576ec1a1eb76061e0c0}{\index{curlpp\-::internal\-::\-Curl\-Handle@{curlpp\-::internal\-::\-Curl\-Handle}!get\-Handle@{get\-Handle}}
+\index{get\-Handle@{get\-Handle}!curlpp::internal::CurlHandle@{curlpp\-::internal\-::\-Curl\-Handle}}
+\subsubsection[{get\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}C\-U\-R\-L $\ast$ curlpp\-::internal\-::\-Curl\-Handle\-::get\-Handle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcurlpp_1_1internal_1_1CurlHandle_a219dded6f057d576ec1a1eb76061e0c0}
+
+
+This function will return the C\-U\-R\-L $\ast$ handle. 
+
+D\-O N\-O\-T use this, unless you R\-E\-A\-L\-L\-Y know what you are doing. \hypertarget{classcurlpp_1_1internal_1_1CurlHandle_ad217ec54215cf880b474a1e1249b5f4e}{\index{curlpp\-::internal\-::\-Curl\-Handle@{curlpp\-::internal\-::\-Curl\-Handle}!get\-Info@{get\-Info}}
+\index{get\-Info@{get\-Info}!curlpp::internal::CurlHandle@{curlpp\-::internal\-::\-Curl\-Handle}}
+\subsubsection[{get\-Info}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void curlpp\-::internal\-::\-Curl\-Handle\-::get\-Info (
+\begin{DoxyParamCaption}
+\item[{C\-U\-R\-L\-I\-N\-F\-O}]{info, }
+\item[{T \&}]{value}
+\end{DoxyParamCaption}
+) const}}\label{classcurlpp_1_1internal_1_1CurlHandle_ad217ec54215cf880b474a1e1249b5f4e}
+
+
+Request internal information from the curl session with this function. 
+
+The third argument M\-U\-S\-T be a pointer to a long, a pointer to a char $\ast$, a pointer to a struct curl\-\_\-slist $\ast$ or a pointer to a double. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/curlpp/internal/Curl\-Handle.\-hpp\item 
+include/curlpp/internal/Curl\-Handle.\-inl\item 
+src/curlpp/internal/Curl\-Handle.\-cpp\end{DoxyCompactItemize}

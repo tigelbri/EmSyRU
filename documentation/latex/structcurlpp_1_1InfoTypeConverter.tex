@@ -1,0 +1,68 @@
+\hypertarget{structcurlpp_1_1InfoTypeConverter}{\section{curlpp\-:\-:Info\-Type\-Converter$<$ T $>$ Struct Template Reference}
+\label{structcurlpp_1_1InfoTypeConverter}\index{curlpp\-::\-Info\-Type\-Converter$<$ T $>$@{curlpp\-::\-Info\-Type\-Converter$<$ T $>$}}
+}
+
+
+This is the class you need to specialize if you use a special type that libc\-U\-R\-L is not aware of.  
+
+
+
+
+{\ttfamily \#include $<$Info.\-hpp$>$}
+
+
+
+Collaboration diagram for curlpp\-:\-:Info\-Type\-Converter$<$ T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{structcurlpp_1_1InfoTypeConverter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structcurlpp_1_1InfoTypeConverter_a1f6560bcd161ce56fae548bddc0fc0fa}{{\footnotesize template$<$$>$ }\\void {\bfseries get} (const \hyperlink{classcurlpp_1_1Easy}{curlpp\-::\-Easy} \&handle, C\-U\-R\-L\-I\-N\-F\-O info, std\-::string \&value)}\label{structcurlpp_1_1InfoTypeConverter_a1f6560bcd161ce56fae548bddc0fc0fa}
+
+\item 
+\hypertarget{structcurlpp_1_1InfoTypeConverter_ad39a8717cf136a1744fcb074462454f4}{{\footnotesize template$<$$>$ }\\void {\bfseries get} (const \hyperlink{classcurlpp_1_1Easy}{curlpp\-::\-Easy} \&handle, C\-U\-R\-L\-I\-N\-F\-O info, std\-::list$<$ std\-::string $>$ \&value)}\label{structcurlpp_1_1InfoTypeConverter_ad39a8717cf136a1744fcb074462454f4}
+
+\item 
+\hypertarget{structcurlpp_1_1InfoTypeConverter_a48e3a20c163ac20a147a1ada5a48fffc}{{\footnotesize template$<$$>$ }\\void {\bfseries get} (const \hyperlink{classcurlpp_1_1Easy}{curlpp\-::\-Easy} \&handle, C\-U\-R\-L\-I\-N\-F\-O info, long \&value)}\label{structcurlpp_1_1InfoTypeConverter_a48e3a20c163ac20a147a1ada5a48fffc}
+
+\item 
+\hypertarget{structcurlpp_1_1InfoTypeConverter_a899b6e658a62c02f9c808f3852c49c81}{{\footnotesize template$<$$>$ }\\void {\bfseries get} (const \hyperlink{classcurlpp_1_1Easy}{curlpp\-::\-Easy} \&handle, C\-U\-R\-L\-I\-N\-F\-O info, double \&value)}\label{structcurlpp_1_1InfoTypeConverter_a899b6e658a62c02f9c808f3852c49c81}
+
+\item 
+\hypertarget{structcurlpp_1_1InfoTypeConverter_a1f6560bcd161ce56fae548bddc0fc0fa}{{\footnotesize template$<$$>$ }\\void {\bfseries get} (const \hyperlink{classcurlpp_1_1Easy}{curlpp\-::\-Easy} \&handle, C\-U\-R\-L\-I\-N\-F\-O info, std\-::string \&value)}\label{structcurlpp_1_1InfoTypeConverter_a1f6560bcd161ce56fae548bddc0fc0fa}
+
+\item 
+\hypertarget{structcurlpp_1_1InfoTypeConverter_ad39a8717cf136a1744fcb074462454f4}{{\footnotesize template$<$$>$ }\\void {\bfseries get} (const \hyperlink{classcurlpp_1_1Easy}{curlpp\-::\-Easy} \&handle, C\-U\-R\-L\-I\-N\-F\-O info, std\-::list$<$ std\-::string $>$ \&value)}\label{structcurlpp_1_1InfoTypeConverter_ad39a8717cf136a1744fcb074462454f4}
+
+\item 
+\hypertarget{structcurlpp_1_1InfoTypeConverter_a48e3a20c163ac20a147a1ada5a48fffc}{{\footnotesize template$<$$>$ }\\void {\bfseries get} (const \hyperlink{classcurlpp_1_1Easy}{curlpp\-::\-Easy} \&handle, C\-U\-R\-L\-I\-N\-F\-O info, long \&value)}\label{structcurlpp_1_1InfoTypeConverter_a48e3a20c163ac20a147a1ada5a48fffc}
+
+\item 
+\hypertarget{structcurlpp_1_1InfoTypeConverter_a899b6e658a62c02f9c808f3852c49c81}{{\footnotesize template$<$$>$ }\\void {\bfseries get} (const \hyperlink{classcurlpp_1_1Easy}{curlpp\-::\-Easy} \&handle, C\-U\-R\-L\-I\-N\-F\-O info, double \&value)}\label{structcurlpp_1_1InfoTypeConverter_a899b6e658a62c02f9c808f3852c49c81}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structcurlpp_1_1InfoTypeConverter_a674dfe95bc1a1607dbd5cfd056834837}{static void {\bfseries get} (const \hyperlink{classcurlpp_1_1Easy}{curlpp\-::\-Easy} \&handle, C\-U\-R\-L\-I\-N\-F\-O info, T \&value)}\label{structcurlpp_1_1InfoTypeConverter_a674dfe95bc1a1607dbd5cfd056834837}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$struct curlpp\-::\-Info\-Type\-Converter$<$ T $>$}
+
+This is the class you need to specialize if you use a special type that libc\-U\-R\-L is not aware of. 
+
+This class need to call curlpp\-::\-Info\-Getter\-::get function. See \hyperlink{structcurlpp_1_1InfoGetter}{curlpp\-::\-Info\-Getter} for more information. 
+
+The documentation for this struct was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/curlpp/Info.\-hpp\item 
+include/curlpp/Info.\-inl\end{DoxyCompactItemize}

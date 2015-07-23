@@ -1,0 +1,41 @@
+\hypertarget{classcurlpp_1_1Cleanup}{\section{curlpp\-:\-:Cleanup Class Reference}
+\label{classcurlpp_1_1Cleanup}\index{curlpp\-::\-Cleanup@{curlpp\-::\-Cleanup}}
+}
+
+
+This is an obsolete class.  
+
+
+
+
+{\ttfamily \#include $<$c\-U\-R\-Lpp.\-hpp$>$}
+
+
+
+Collaboration diagram for curlpp\-:\-:Cleanup\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classcurlpp_1_1Cleanup__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+This is an obsolete class. 
+
+D\-O N\-O\-T use it.
+
+The only reason it's still here, is to be sure that it is backward compatible. This class was taking care of initialization and cleaning up curlpp (also libc\-U\-R\-L) (it was calling curlpp\-:terminate() in his destructor). However, from now on, you do not need this class. Note that the removal of this class was done because it was raising some threading issues.
+
+Old documentation of that class\-:
+
+If you want to be sure that curlpp is cleaned up after you reached the end of scope of a specific function using curlpp, instantiate this class. This function call curlpp\-::initialize() in his constructor, so you don't have to call it by yourself, when you have decided to use it.
+
+See curlpp\-::initialize(long flags) and curlpp\-:terminate() for more documentation. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/curlpp/c\-U\-R\-Lpp.\-hpp\item 
+src/curlpp/c\-U\-R\-Lpp.\-cpp\end{DoxyCompactItemize}

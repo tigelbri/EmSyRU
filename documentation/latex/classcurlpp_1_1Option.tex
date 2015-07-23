@@ -1,0 +1,149 @@
+\hypertarget{classcurlpp_1_1Option}{\section{curlpp\-:\-:Option$<$ O\-T $>$ Class Template Reference}
+\label{classcurlpp_1_1Option}\index{curlpp\-::\-Option$<$ O\-T $>$@{curlpp\-::\-Option$<$ O\-T $>$}}
+}
+
+
+This class is representing an option that you set on a class.  
+
+
+
+
+{\ttfamily \#include $<$Option.\-hpp$>$}
+
+
+
+Inheritance diagram for curlpp\-:\-:Option$<$ O\-T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classcurlpp_1_1Option__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for curlpp\-:\-:Option$<$ O\-T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classcurlpp_1_1Option__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1Option_ad730f2395a91a44fbad5a1947ae1ddc0}{typedef O\-T {\bfseries Option\-Type}}\label{classcurlpp_1_1Option_ad730f2395a91a44fbad5a1947ae1ddc0}
+
+\item 
+\hypertarget{classcurlpp_1_1Option_abff8ae31c85f46ff7124fd164b5dc123}{typedef \\*
+\hyperlink{classcurlpp_1_1internal_1_1OptionContainer}{internal\-::\-Option\-Container}\\*
+$<$ Option\-Type $>$\-::Param\-Type {\bfseries Param\-Type}}\label{classcurlpp_1_1Option_abff8ae31c85f46ff7124fd164b5dc123}
+
+\item 
+\hypertarget{classcurlpp_1_1Option_ac0db1cbc4e5da9e934f406dd9590bfd4}{typedef \\*
+\hyperlink{classcurlpp_1_1internal_1_1OptionContainer}{internal\-::\-Option\-Container}\\*
+$<$ Option\-Type $>$\-::Value\-Type {\bfseries Value\-Type}}\label{classcurlpp_1_1Option_ac0db1cbc4e5da9e934f406dd9590bfd4}
+
+\item 
+\hypertarget{classcurlpp_1_1Option_a71764f6f709450ee0a0632055ef37214}{typedef \\*
+\hyperlink{classcurlpp_1_1internal_1_1OptionContainer}{internal\-::\-Option\-Container}\\*
+$<$ Option\-Type $>$\-::Return\-Type {\bfseries Return\-Type}}\label{classcurlpp_1_1Option_a71764f6f709450ee0a0632055ef37214}
+
+\item 
+\hypertarget{classcurlpp_1_1Option_acf1db22f84698fabbc589008fdb1d95f}{typedef \\*
+\hyperlink{classcurlpp_1_1internal_1_1OptionContainer}{internal\-::\-Option\-Container}\\*
+$<$ Option\-Type $>$\\*
+\-::Handle\-Option\-Type {\bfseries Handle\-Option\-Type}}\label{classcurlpp_1_1Option_acf1db22f84698fabbc589008fdb1d95f}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1Option_a116d6c5ee8953d0c947f589a44574c53}{virtual \hyperlink{classcurlpp_1_1Option_a116d6c5ee8953d0c947f589a44574c53}{$\sim$\-Option} ()}\label{classcurlpp_1_1Option_a116d6c5ee8953d0c947f589a44574c53}
+
+\begin{DoxyCompactList}\small\item\em What can I say? Everyone is dying one time or another... \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1Option_ad2dcaf8f019108f8a6b0622a27b10bc1}{void \hyperlink{classcurlpp_1_1Option_ad2dcaf8f019108f8a6b0622a27b10bc1}{set\-Value} (typename \hyperlink{classcurlpp_1_1Option}{Option}$<$ Option\-Type $>$\-::Param\-Type value)}\label{classcurlpp_1_1Option_ad2dcaf8f019108f8a6b0622a27b10bc1}
+
+\begin{DoxyCompactList}\small\item\em This function will set the value that will be set on handle when we will call the \char`\"{}update\char`\"{} function on a handle. \end{DoxyCompactList}\item 
+\hyperlink{classcurlpp_1_1Option}{Option}$<$ Option\-Type $>$\-::Return\-Type \hyperlink{classcurlpp_1_1Option_aeceb0e587afdcfe6d826e2a745bb47fe}{get\-Value} () const 
+\begin{DoxyCompactList}\small\item\em This function will return the value that this option was set to. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classcurlpp_1_1Option_a149e8845e36201f9e1f772947ffbfde0}{clear} ()
+\begin{DoxyCompactList}\small\item\em This function will reset the option value. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1Option_a838ca4e7bf68f5ded3e33455fc546151}{virtual void \hyperlink{classcurlpp_1_1Option_a838ca4e7bf68f5ded3e33455fc546151}{update\-Me\-To\-Option} (const \hyperlink{classcurlpp_1_1OptionBase}{Option\-Base} \&other)}\label{classcurlpp_1_1Option_a838ca4e7bf68f5ded3e33455fc546151}
+
+\begin{DoxyCompactList}\small\item\em Will update the value of the option with the value of the option passed is argument. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1Option_a4fdf55cf8f735e44a0a39c617f0e641b}{\hyperlink{classcurlpp_1_1Option_a4fdf55cf8f735e44a0a39c617f0e641b}{Option} (C\-U\-R\-Loption option, typename \hyperlink{classcurlpp_1_1Option}{Option}$<$ Option\-Type $>$\-::Param\-Type value)}\label{classcurlpp_1_1Option_a4fdf55cf8f735e44a0a39c617f0e641b}
+
+\begin{DoxyCompactList}\small\item\em The constructor takes the a value to set a handle. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1Option_a35d366e9aa8649632b298bb1c42acde3}{\hyperlink{classcurlpp_1_1Option_a35d366e9aa8649632b298bb1c42acde3}{Option} (const \hyperlink{classcurlpp_1_1Option}{Option}$<$ Option\-Type $>$ \&other)}\label{classcurlpp_1_1Option_a35d366e9aa8649632b298bb1c42acde3}
+
+\begin{DoxyCompactList}\small\item\em The construction will copy the value of the \hyperlink{classcurlpp_1_1Option}{Option} passed in argument. \end{DoxyCompactList}\item 
+\hyperlink{classcurlpp_1_1Option_a86f7d7bf4ce8ebd8448c0a4658b521ee}{Option} (C\-U\-R\-Loption option)
+\begin{DoxyCompactList}\small\item\em The constructor will contain an unset option value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1Option_a11963364bc30eccdbc9ae00e502014e7}{\hyperlink{classcurlpp_1_1internal_1_1OptionContainer}{curlpp\-::internal\-::\-Option\-Container}\\*
+$<$ Option\-Type $>$ $\ast$ \hyperlink{classcurlpp_1_1Option_a11963364bc30eccdbc9ae00e502014e7}{m\-Container}}\label{classcurlpp_1_1Option_a11963364bc30eccdbc9ae00e502014e7}
+
+\begin{DoxyCompactList}\small\item\em the class that actually have the value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename O\-T$>$class curlpp\-::\-Option$<$ O\-T $>$}
+
+This class is representing an option that you set on a class. 
+
+We use utilspp\-::pointer\-\_\-on\-\_\-member\-\_\-function and utilspp\-::type\-\_\-trait to simplify the declaration of an option object. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcurlpp_1_1Option_a86f7d7bf4ce8ebd8448c0a4658b521ee}{\index{curlpp\-::\-Option@{curlpp\-::\-Option}!Option@{Option}}
+\index{Option@{Option}!curlpp::Option@{curlpp\-::\-Option}}
+\subsubsection[{Option}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Option\-Type $>$ {\bf curlpp\-::\-Option}$<$ Option\-Type $>$\-::{\bf Option} (
+\begin{DoxyParamCaption}
+\item[{C\-U\-R\-Loption}]{option}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcurlpp_1_1Option_a86f7d7bf4ce8ebd8448c0a4658b521ee}
+
+
+The constructor will contain an unset option value. 
+
+Note that if you try to retreive the value of this option before calling the \hyperlink{classcurlpp_1_1Option_ad2dcaf8f019108f8a6b0622a27b10bc1}{curlpp\-::\-Option\-::set\-Value} function it will throw a \hyperlink{classcurlpp_1_1UnsetOption}{Unset\-Option} exception. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcurlpp_1_1Option_a149e8845e36201f9e1f772947ffbfde0}{\index{curlpp\-::\-Option@{curlpp\-::\-Option}!clear@{clear}}
+\index{clear@{clear}!curlpp::Option@{curlpp\-::\-Option}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Option\-Type $>$ void {\bf curlpp\-::\-Option}$<$ Option\-Type $>$\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcurlpp_1_1Option_a149e8845e36201f9e1f772947ffbfde0}
+
+
+This function will reset the option value. 
+
+That means that if you try to retreive the value of this option, or if you try to set this option to a handle, it will throw an \hyperlink{classcurlpp_1_1UnsetOption}{Unset\-Option} exception. 
+
+Implements \hyperlink{classcurlpp_1_1OptionBase_afa192d6d315eb4cc09ab9002a229c564}{curlpp\-::\-Option\-Base}.
+
+\hypertarget{classcurlpp_1_1Option_aeceb0e587afdcfe6d826e2a745bb47fe}{\index{curlpp\-::\-Option@{curlpp\-::\-Option}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!curlpp::Option@{curlpp\-::\-Option}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Option\-Type $>$ {\bf Option}$<$ Option\-Type $>$\-::Return\-Type {\bf curlpp\-::\-Option}$<$ Option\-Type $>$\-::get\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcurlpp_1_1Option_aeceb0e587afdcfe6d826e2a745bb47fe}
+
+
+This function will return the value that this option was set to. 
+
+Note\-: if you didn't set any value by the \hyperlink{classcurlpp_1_1Option_ad2dcaf8f019108f8a6b0622a27b10bc1}{curlpp\-::\-Option\-::set\-Value} function, or the handle option value, retreived by the curlpp\-::\-Option\-::update\-Me\-To\-Handle function, is a unset value, it will throw a \hyperlink{classcurlpp_1_1UnsetOption}{Unset\-Option} exception. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/curlpp/Option.\-hpp\item 
+include/curlpp/Option.\-inl\end{DoxyCompactItemize}

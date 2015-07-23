@@ -1,0 +1,4 @@
+<map id="curlpp::LogicError" name="curlpp::LogicError">
+<area shape="rect" id="node3" href="$classcurlpp_1_1LibcurlLogicError.html" title="{curlpp::LibcurlLogicError\n||+ LibcurlLogicError()\l+ LibcurlLogicError()\l+ whatCode()\l}" alt="" coords="5,285,168,392"/>
+<area shape="rect" id="node4" href="$classcurlpp_1_1NotAvailable.html" title="This exception is thrown when you try to instantiate an option that isn&#39;t available for your current ..." alt="" coords="192,300,331,377"/>
+</map>

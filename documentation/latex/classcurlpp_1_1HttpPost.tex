@@ -1,0 +1,75 @@
+\hypertarget{classcurlpp_1_1HttpPost}{\section{curlpp\-:\-:Http\-Post Class Reference}
+\label{classcurlpp_1_1HttpPost}\index{curlpp\-::\-Http\-Post@{curlpp\-::\-Http\-Post}}
+}
+
+
+This class is used internally to wrap over curl\-\_\-httppost class.  
+
+
+
+
+{\ttfamily \#include $<$Form.\-hpp$>$}
+
+
+
+Collaboration diagram for curlpp\-:\-:Http\-Post\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classcurlpp_1_1HttpPost__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1HttpPost_a77c1bd73fe664fa9b5bc004a3ccba2c1}{{\bfseries Http\-Post} (const Forms \&posts)}\label{classcurlpp_1_1HttpPost_a77c1bd73fe664fa9b5bc004a3ccba2c1}
+
+\item 
+\hyperlink{classcurlpp_1_1HttpPost}{Http\-Post} \& \hyperlink{classcurlpp_1_1HttpPost_a87ce1f2b173a97b2e1aae8b0ed89dcfb}{operator=} (const Forms \&posts)
+\begin{DoxyCompactList}\small\item\em initialize the H\-T\-T\-P post with the list of forms. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1HttpPost_ab2d9e2991e8afd6b4579fdc887c8bd04}{{\bfseries operator Forms} ()}\label{classcurlpp_1_1HttpPost_ab2d9e2991e8afd6b4579fdc887c8bd04}
+
+\item 
+\-::curl\-\_\-httppost $\ast$ \hyperlink{classcurlpp_1_1HttpPost_addd3603b92cd76e65fffa2d14455e00a}{c\-Http\-Post} () const 
+\begin{DoxyCompactList}\small\item\em return the curl\-\_\-httppost representation of this H\-T\-T\-P Post. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1HttpPost_ade291ea8719d0be0b063941eaa5cd0d0}{void \hyperlink{classcurlpp_1_1HttpPost_ade291ea8719d0be0b063941eaa5cd0d0}{clear} ()}\label{classcurlpp_1_1HttpPost_ade291ea8719d0be0b063941eaa5cd0d0}
+
+\begin{DoxyCompactList}\small\item\em Free all H\-T\-T\-P posts. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1HttpPost_ac474eb2164a5c56d8d9f9d22da38b6f5}{Forms \hyperlink{classcurlpp_1_1HttpPost_ac474eb2164a5c56d8d9f9d22da38b6f5}{get\-List} ()}\label{classcurlpp_1_1HttpPost_ac474eb2164a5c56d8d9f9d22da38b6f5}
+
+\begin{DoxyCompactList}\small\item\em Get the list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used internally to wrap over curl\-\_\-httppost class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcurlpp_1_1HttpPost_addd3603b92cd76e65fffa2d14455e00a}{\index{curlpp\-::\-Http\-Post@{curlpp\-::\-Http\-Post}!c\-Http\-Post@{c\-Http\-Post}}
+\index{c\-Http\-Post@{c\-Http\-Post}!curlpp::HttpPost@{curlpp\-::\-Http\-Post}}
+\subsubsection[{c\-Http\-Post}]{\setlength{\rightskip}{0pt plus 5cm}curl\-\_\-httppost $\ast$ curlpp\-::\-Http\-Post\-::c\-Http\-Post (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcurlpp_1_1HttpPost_addd3603b92cd76e65fffa2d14455e00a}
+
+
+return the curl\-\_\-httppost representation of this H\-T\-T\-P Post. 
+
+Be aware that the memory return is owned by the current instance, so don't try to delete it. \hypertarget{classcurlpp_1_1HttpPost_a87ce1f2b173a97b2e1aae8b0ed89dcfb}{\index{curlpp\-::\-Http\-Post@{curlpp\-::\-Http\-Post}!operator=@{operator=}}
+\index{operator=@{operator=}!curlpp::HttpPost@{curlpp\-::\-Http\-Post}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf curlpp\-::\-Http\-Post} \& curlpp\-::\-Http\-Post\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const Forms \&}]{posts}
+\end{DoxyParamCaption}
+)}}\label{classcurlpp_1_1HttpPost_a87ce1f2b173a97b2e1aae8b0ed89dcfb}
+
+
+initialize the H\-T\-T\-P post with the list of forms. 
+
+The Forms will be cloned. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/curlpp/Form.\-hpp\item 
+src/curlpp/Form.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,94 @@
+\hypertarget{classcurlpp_1_1internal_1_1OptionList}{\section{curlpp\-:\-:internal\-:\-:Option\-List Class Reference}
+\label{classcurlpp_1_1internal_1_1OptionList}\index{curlpp\-::internal\-::\-Option\-List@{curlpp\-::internal\-::\-Option\-List}}
+}
+
+
+This class can keep a set of option\-\_\-container it's used to keep all the option set on a handle.  
+
+
+
+
+{\ttfamily \#include $<$Option\-List.\-hpp$>$}
+
+
+
+Collaboration diagram for curlpp\-:\-:internal\-:\-:Option\-List\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classcurlpp_1_1internal_1_1OptionList__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1OptionList_a13b11635f4da1d42cde784135e4b95de}{typedef std\-::map$<$ C\-U\-R\-Loption, \\*
+\hyperlink{classcurlpp_1_1OptionBase}{curlpp\-::\-Option\-Base} $\ast$ $>$ {\bfseries map\-Type}}\label{classcurlpp_1_1internal_1_1OptionList_a13b11635f4da1d42cde784135e4b95de}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1OptionList_ab4ab4f470c3c916ed0d06469a280fb2e}{\hyperlink{classcurlpp_1_1internal_1_1OptionList_ab4ab4f470c3c916ed0d06469a280fb2e}{Option\-List} ()}\label{classcurlpp_1_1internal_1_1OptionList_ab4ab4f470c3c916ed0d06469a280fb2e}
+
+\begin{DoxyCompactList}\small\item\em This construction initialize an empty list of options. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1internal_1_1OptionList_a2deec6668c1e69eafb2ac7259b3fa534}{\hyperlink{classcurlpp_1_1internal_1_1OptionList_a2deec6668c1e69eafb2ac7259b3fa534}{Option\-List} (const \hyperlink{classcurlpp_1_1internal_1_1OptionList}{Option\-List} \&rhs)}\label{classcurlpp_1_1internal_1_1OptionList_a2deec6668c1e69eafb2ac7259b3fa534}
+
+\begin{DoxyCompactList}\small\item\em This contructor initialize his list by calling the option\-\_\-container$<$\-T$>$\-::clone() function. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classcurlpp_1_1internal_1_1OptionList_a16d87ab2dc8f2729014439f6dad3735f}{set\-Opt} (\hyperlink{classcurlpp_1_1OptionBase}{Option\-Base} $\ast$option)
+\begin{DoxyCompactList}\small\item\em This function will add an option to the list. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classcurlpp_1_1internal_1_1OptionList_a6838ee298ffe792709e8346a46547661}{set\-Opt} (const \hyperlink{classcurlpp_1_1OptionBase}{Option\-Base} \&option)
+\begin{DoxyCompactList}\small\item\em This function will add an option to the list. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1internal_1_1OptionList_a72b762b89ce540e7f81aa4db16bceb72}{virtual void \hyperlink{classcurlpp_1_1internal_1_1OptionList_a72b762b89ce540e7f81aa4db16bceb72}{set\-Opt} (const \hyperlink{classcurlpp_1_1internal_1_1OptionList}{Option\-List} \&options)}\label{classcurlpp_1_1internal_1_1OptionList_a72b762b89ce540e7f81aa4db16bceb72}
+
+\begin{DoxyCompactList}\small\item\em This function will call the set\-Opt on each options contained by $\ast$ the option list passed in argument. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classcurlpp_1_1internal_1_1OptionList_a61a173a41cb991cedf385878f27d1c8a}{get\-Opt} (\hyperlink{classcurlpp_1_1OptionBase}{Option\-Base} $\ast$option) const 
+\begin{DoxyCompactList}\small\item\em This function will get the current option value of the corresponding \hyperlink{classcurlpp_1_1OptionBase}{Option\-Base}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class can keep a set of option\-\_\-container it's used to keep all the option set on a handle. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcurlpp_1_1internal_1_1OptionList_a61a173a41cb991cedf385878f27d1c8a}{\index{curlpp\-::internal\-::\-Option\-List@{curlpp\-::internal\-::\-Option\-List}!get\-Opt@{get\-Opt}}
+\index{get\-Opt@{get\-Opt}!curlpp::internal::OptionList@{curlpp\-::internal\-::\-Option\-List}}
+\subsubsection[{get\-Opt}]{\setlength{\rightskip}{0pt plus 5cm}void curlpp\-::internal\-::\-Option\-List\-::get\-Opt (
+\begin{DoxyParamCaption}
+\item[{{\bf curlpp\-::\-Option\-Base} $\ast$}]{option}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcurlpp_1_1internal_1_1OptionList_a61a173a41cb991cedf385878f27d1c8a}
+
+
+This function will get the current option value of the corresponding \hyperlink{classcurlpp_1_1OptionBase}{Option\-Base}. 
+
+Note that if the option is not set, the option passed in parameter will be cleared. (See Option\-::get\-Opt for more details) \hypertarget{classcurlpp_1_1internal_1_1OptionList_a16d87ab2dc8f2729014439f6dad3735f}{\index{curlpp\-::internal\-::\-Option\-List@{curlpp\-::internal\-::\-Option\-List}!set\-Opt@{set\-Opt}}
+\index{set\-Opt@{set\-Opt}!curlpp::internal::OptionList@{curlpp\-::internal\-::\-Option\-List}}
+\subsubsection[{set\-Opt}]{\setlength{\rightskip}{0pt plus 5cm}void curlpp\-::internal\-::\-Option\-List\-::set\-Opt (
+\begin{DoxyParamCaption}
+\item[{{\bf curlpp\-::\-Option\-Base} $\ast$}]{option}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcurlpp_1_1internal_1_1OptionList_a16d87ab2dc8f2729014439f6dad3735f}
+
+
+This function will add an option to the list. 
+
+Note that if the option is allready contained by the list, the option value of this option will be overrided by the new value.
+
+Note\-: The option memory will be owned by the request, so when the request will be deleted, the option will be deleted too. It is suggested to not referer at all further in the code to the option instance passed as an argument. \hypertarget{classcurlpp_1_1internal_1_1OptionList_a6838ee298ffe792709e8346a46547661}{\index{curlpp\-::internal\-::\-Option\-List@{curlpp\-::internal\-::\-Option\-List}!set\-Opt@{set\-Opt}}
+\index{set\-Opt@{set\-Opt}!curlpp::internal::OptionList@{curlpp\-::internal\-::\-Option\-List}}
+\subsubsection[{set\-Opt}]{\setlength{\rightskip}{0pt plus 5cm}void curlpp\-::internal\-::\-Option\-List\-::set\-Opt (
+\begin{DoxyParamCaption}
+\item[{const {\bf Option\-Base} \&}]{option}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcurlpp_1_1internal_1_1OptionList_a6838ee298ffe792709e8346a46547661}
+
+
+This function will add an option to the list. 
+
+Note that if the option is allready contained by the list, the option value of this option will be overrided by the new value. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/curlpp/internal/Option\-List.\-hpp\item 
+src/curlpp/internal/Option\-List.\-cpp\end{DoxyCompactItemize}

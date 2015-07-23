@@ -1,0 +1,90 @@
+\hypertarget{classTimestamp}{\section{Timestamp Class Reference}
+\label{classTimestamp}\index{Timestamp@{Timestamp}}
+}
+
+
+A helper class for automated time stamping.  
+
+
+
+
+{\ttfamily \#include $<$Timestamp.\-hpp$>$}
+
+
+
+Collaboration diagram for Timestamp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classTimestamp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classTimestamp_a2e610487ef16d9d5a8d6dc8ad457a3e7}{\hyperlink{classTimestamp_a2e610487ef16d9d5a8d6dc8ad457a3e7}{Timestamp} ()}\label{classTimestamp_a2e610487ef16d9d5a8d6dc8ad457a3e7}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classTimestamp_a6a3a6be79b2630909a965723975f4c84}{unsigned long \hyperlink{classTimestamp_a6a3a6be79b2630909a965723975f4c84}{get\-Current\-Time\-In\-Ms} () const }\label{classTimestamp_a6a3a6be79b2630909a965723975f4c84}
+
+\begin{DoxyCompactList}\small\item\em Returns the current system time in milliseconds. \end{DoxyCompactList}\item 
+\hypertarget{classTimestamp_a641310172f62f61909ac5339c54e51a6}{unsigned long \hyperlink{classTimestamp_a641310172f62f61909ac5339c54e51a6}{get\-Elapsed\-Time\-In\-Ms} () const }\label{classTimestamp_a641310172f62f61909ac5339c54e51a6}
+
+\begin{DoxyCompactList}\small\item\em Returns the milliseconds since object creation. \end{DoxyCompactList}\item 
+\hypertarget{classTimestamp_a87f7c5b0947fbcf78658939252401787}{double \hyperlink{classTimestamp_a87f7c5b0947fbcf78658939252401787}{get\-Current\-Timein\-S} () const }\label{classTimestamp_a87f7c5b0947fbcf78658939252401787}
+
+\begin{DoxyCompactList}\small\item\em Returns the current system time in seconds. \end{DoxyCompactList}\item 
+double \hyperlink{classTimestamp_a6ab74f6c31b156bc4ba5a952d843c571}{get\-Elapsed\-Time\-In\-S} () const 
+\begin{DoxyCompactList}\small\item\em the time since instantiation in seconds \end{DoxyCompactList}\item 
+\hypertarget{classTimestamp_a0ff8334b18bd59a121b565560e9be9a3}{void \hyperlink{classTimestamp_a0ff8334b18bd59a121b565560e9be9a3}{reset\-Timer} ()}\label{classTimestamp_a0ff8334b18bd59a121b565560e9be9a3}
+
+\begin{DoxyCompactList}\small\item\em Resets the internal timer. \end{DoxyCompactList}\item 
+string \hyperlink{classTimestamp_a572d6e9e1c901c3ccf681d6038bb884d}{get\-Elapsed\-Time} () const 
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the current timer value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classTimestamp_a4738264904d2318a612cfce83e155294}{ostream \& {\bfseries operator$<$$<$} (ostream \&os, const \hyperlink{classTimestamp}{Timestamp} \&ts)}\label{classTimestamp_a4738264904d2318a612cfce83e155294}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A helper class for automated time stamping. 
+
+Timing is started as soon as an object of this class is created.
+
+To time some parts of a program, just create a new object
+
+and use the provided output operator to display the elapsed time. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classTimestamp_a572d6e9e1c901c3ccf681d6038bb884d}{\index{Timestamp@{Timestamp}!get\-Elapsed\-Time@{get\-Elapsed\-Time}}
+\index{get\-Elapsed\-Time@{get\-Elapsed\-Time}!Timestamp@{Timestamp}}
+\subsubsection[{get\-Elapsed\-Time}]{\setlength{\rightskip}{0pt plus 5cm}string Timestamp\-::get\-Elapsed\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classTimestamp_a572d6e9e1c901c3ccf681d6038bb884d}
+
+
+Returns a string representation of the current timer value. 
+
+\hypertarget{classTimestamp_a6ab74f6c31b156bc4ba5a952d843c571}{\index{Timestamp@{Timestamp}!get\-Elapsed\-Time\-In\-S@{get\-Elapsed\-Time\-In\-S}}
+\index{get\-Elapsed\-Time\-In\-S@{get\-Elapsed\-Time\-In\-S}!Timestamp@{Timestamp}}
+\subsubsection[{get\-Elapsed\-Time\-In\-S}]{\setlength{\rightskip}{0pt plus 5cm}double Timestamp\-::get\-Elapsed\-Time\-In\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classTimestamp_a6ab74f6c31b156bc4ba5a952d843c571}
+
+
+the time since instantiation in seconds 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Timestamp_8hpp}{Timestamp.\-hpp}\item 
+src/Timestamp.\-cpp\end{DoxyCompactItemize}

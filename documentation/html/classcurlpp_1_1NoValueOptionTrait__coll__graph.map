@@ -1,0 +1,5 @@
+<map id="curlpp::NoValueOptionTrait&lt; option &gt;" name="curlpp::NoValueOptionTrait&lt; option &gt;">
+<area shape="rect" id="node2" href="$classcurlpp_1_1OptionTrait.html" title="{curlpp::OptionTrait\l\&lt; bool, option \&gt;\n|+ option\l|+ OptionTrait()\l+ OptionTrait()\l+ clone()\l}" alt="" coords="30,465,159,586"/>
+<area shape="rect" id="node3" href="$classcurlpp_1_1Option.html" title="{curlpp::Option\&lt; bool \&gt;\n|# mContainer\l|+ ~Option()\l+ setValue()\l+ getValue()\l+ clear()\l+ updateMeToOption()\l# Option()\l# Option()\l# Option()\l}" alt="" coords="19,235,171,415"/>
+<area shape="rect" id="node4" href="$classcurlpp_1_1OptionBase.html" title="This is the parent of the curlpp::option class. " alt="" coords="17,6,171,186"/>
+</map>

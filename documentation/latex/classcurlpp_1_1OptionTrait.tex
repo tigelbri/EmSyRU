@@ -1,0 +1,103 @@
+\hypertarget{classcurlpp_1_1OptionTrait}{\section{curlpp\-:\-:Option\-Trait$<$ Option\-Type, opt $>$ Class Template Reference}
+\label{classcurlpp_1_1OptionTrait}\index{curlpp\-::\-Option\-Trait$<$ Option\-Type, opt $>$@{curlpp\-::\-Option\-Trait$<$ Option\-Type, opt $>$}}
+}
+
+
+This class is just a wrapper around \hyperlink{classcurlpp_1_1Option}{curlpp\-::\-Option}, in order to be able to typedef Options.  
+
+
+
+
+{\ttfamily \#include $<$Option.\-hpp$>$}
+
+
+
+Inheritance diagram for curlpp\-:\-:Option\-Trait$<$ Option\-Type, opt $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classcurlpp_1_1OptionTrait__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for curlpp\-:\-:Option\-Trait$<$ Option\-Type, opt $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classcurlpp_1_1OptionTrait__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1OptionTrait_a8798a968833b5f95ae0c4da466232906}{\hyperlink{classcurlpp_1_1OptionTrait_a8798a968833b5f95ae0c4da466232906}{Option\-Trait} (typename \hyperlink{classcurlpp_1_1Option}{Option}$<$ Option\-Type $>$\-::Param\-Type value)}\label{classcurlpp_1_1OptionTrait_a8798a968833b5f95ae0c4da466232906}
+
+\begin{DoxyCompactList}\small\item\em The constructor takes the a value to set a handle. \end{DoxyCompactList}\item 
+\hyperlink{classcurlpp_1_1OptionTrait_a345c9d4f8468a716c7954666f22fb9d8}{Option\-Trait} ()
+\begin{DoxyCompactList}\small\item\em The constructor will contain an unset option value. \end{DoxyCompactList}\item 
+virtual \hyperlink{classcurlpp_1_1OptionTrait}{Option\-Trait} $\ast$ \hyperlink{classcurlpp_1_1OptionTrait_a2e0254ab4187bf413d8c53a0114a191d}{clone} () const 
+\begin{DoxyCompactList}\small\item\em Return a copy of the current option. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1OptionTrait_a06451f77383083ea93233c612bdf1b92}{static const C\-U\-R\-Loption {\bfseries option} = opt}\label{classcurlpp_1_1OptionTrait_a06451f77383083ea93233c612bdf1b92}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1OptionTrait_aca01636a4dba40614b164b807fa9cb9f}{class {\bfseries Easy}}\label{classcurlpp_1_1OptionTrait_aca01636a4dba40614b164b807fa9cb9f}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Option\-Type, C\-U\-R\-Loption opt$>$class curlpp\-::\-Option\-Trait$<$ Option\-Type, opt $>$}
+
+This class is just a wrapper around \hyperlink{classcurlpp_1_1Option}{curlpp\-::\-Option}, in order to be able to typedef Options. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcurlpp_1_1OptionTrait_a345c9d4f8468a716c7954666f22fb9d8}{\index{curlpp\-::\-Option\-Trait@{curlpp\-::\-Option\-Trait}!Option\-Trait@{Option\-Trait}}
+\index{Option\-Trait@{Option\-Trait}!curlpp::OptionTrait@{curlpp\-::\-Option\-Trait}}
+\subsubsection[{Option\-Trait}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Option\-Type, C\-U\-R\-Loption option$>$ {\bf curlpp\-::\-Option\-Trait}$<$ Option\-Type, option $>$\-::{\bf Option\-Trait} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcurlpp_1_1OptionTrait_a345c9d4f8468a716c7954666f22fb9d8}
+
+
+The constructor will contain an unset option value. 
+
+Note that if you try to retreive the value of this option before calling the \hyperlink{classcurlpp_1_1Option_ad2dcaf8f019108f8a6b0622a27b10bc1}{curlpp\-::\-Option\-::set\-Value} function it will throw a \hyperlink{classcurlpp_1_1UnsetOption}{Unset\-Option} exception. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcurlpp_1_1OptionTrait_a2e0254ab4187bf413d8c53a0114a191d}{\index{curlpp\-::\-Option\-Trait@{curlpp\-::\-Option\-Trait}!clone@{clone}}
+\index{clone@{clone}!curlpp::OptionTrait@{curlpp\-::\-Option\-Trait}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Option\-Type , C\-U\-R\-Loption option$>$ {\bf Option\-Trait}$<$ Option\-Type, option $>$ $\ast$ {\bf curlpp\-::\-Option\-Trait}$<$ Option\-Type, option $>$\-::clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcurlpp_1_1OptionTrait_a2e0254ab4187bf413d8c53a0114a191d}
+
+
+Return a copy of the current option. 
+
+Note that the option value is copied too. 
+
+Implements \hyperlink{classcurlpp_1_1OptionBase_a55db7596ba57a679538c14adf5c680b4}{curlpp\-::\-Option\-Base}.
+
+
+
+Reimplemented in \hyperlink{classcurlpp_1_1NoValueOptionTrait_af1e088d6a56673c18eaebe13b87fa743}{curlpp\-::\-No\-Value\-Option\-Trait$<$ option $>$}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/curlpp/Option.\-hpp\item 
+include/curlpp/Option.\-inl\item 
+src/curlpp/Option.\-cpp\end{DoxyCompactItemize}

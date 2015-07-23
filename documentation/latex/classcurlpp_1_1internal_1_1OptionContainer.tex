@@ -1,0 +1,109 @@
+\hypertarget{classcurlpp_1_1internal_1_1OptionContainer}{\section{curlpp\-:\-:internal\-:\-:Option\-Container$<$ Option\-Type $>$ Class Template Reference}
+\label{classcurlpp_1_1internal_1_1OptionContainer}\index{curlpp\-::internal\-::\-Option\-Container$<$ Option\-Type $>$@{curlpp\-::internal\-::\-Option\-Container$<$ Option\-Type $>$}}
+}
+
+
+This class is used to set an option to a handle and to keep it's value.  
+
+
+
+
+{\ttfamily \#include $<$Option\-Container.\-hpp$>$}
+
+
+
+Collaboration diagram for curlpp\-:\-:internal\-:\-:Option\-Container$<$ Option\-Type $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classcurlpp_1_1internal_1_1OptionContainer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1OptionContainer_af5fc9d251687411532504b118db7e953}{typedef \hyperlink{structcurlpp_1_1internal_1_1OptionContainerType}{Option\-Container\-Type}\\*
+$<$ Option\-Type $>$\-::Param\-Type {\bfseries Param\-Type}}\label{classcurlpp_1_1internal_1_1OptionContainer_af5fc9d251687411532504b118db7e953}
+
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1OptionContainer_a89c38a645419f43993fdfad6696153d0}{typedef \hyperlink{structcurlpp_1_1internal_1_1OptionContainerType}{Option\-Container\-Type}\\*
+$<$ Option\-Type $>$\-::Return\-Type {\bfseries Return\-Type}}\label{classcurlpp_1_1internal_1_1OptionContainer_a89c38a645419f43993fdfad6696153d0}
+
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1OptionContainer_a2a0272d2c99a9b72a962cacf10f6889d}{typedef \hyperlink{structcurlpp_1_1internal_1_1OptionContainerType}{Option\-Container\-Type}\\*
+$<$ Option\-Type $>$\-::Value\-Type {\bfseries Value\-Type}}\label{classcurlpp_1_1internal_1_1OptionContainer_a2a0272d2c99a9b72a962cacf10f6889d}
+
+\item 
+\hypertarget{classcurlpp_1_1internal_1_1OptionContainer_a38b0f46eb8c6ee53afb017bce8c3ec0d}{typedef \hyperlink{structcurlpp_1_1internal_1_1OptionContainerType}{Option\-Container\-Type}\\*
+$<$ Option\-Type $>$\\*
+\-::Handle\-Option\-Type {\bfseries Handle\-Option\-Type}}\label{classcurlpp_1_1internal_1_1OptionContainer_a38b0f46eb8c6ee53afb017bce8c3ec0d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcurlpp_1_1internal_1_1OptionContainer_ab4ae19d723a83601263feb52ad3584cc}{Option\-Container} (typename \hyperlink{classcurlpp_1_1internal_1_1OptionContainer}{Option\-Container}$<$ Option\-Type $>$\-::Param\-Type value)
+\begin{DoxyCompactList}\small\item\em Contructor. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1internal_1_1OptionContainer_aadfba725b98ad3c2aa5fb8672879d46f}{{\bfseries Option\-Container} (\hyperlink{classcurlpp_1_1internal_1_1OptionContainer}{Option\-Container}$<$ Option\-Type $>$ \&other)}\label{classcurlpp_1_1internal_1_1OptionContainer_aadfba725b98ad3c2aa5fb8672879d46f}
+
+\item 
+void \hyperlink{classcurlpp_1_1internal_1_1OptionContainer_a2922047662c00e56a17e846093726b5b}{set\-Value} (typename \hyperlink{classcurlpp_1_1internal_1_1OptionContainer}{Option\-Container}$<$ Option\-Type $>$\-::Param\-Type value)
+\begin{DoxyCompactList}\small\item\em This function set the argument that will be passed to the option call for a handle. \end{DoxyCompactList}\item 
+\hypertarget{classcurlpp_1_1internal_1_1OptionContainer_a30fe5c33aef33f58cb6b6875c00fb8a0}{\hyperlink{classcurlpp_1_1internal_1_1OptionContainer}{Option\-Container}$<$ Option\-Type $>$\\*
+\-::Return\-Type \hyperlink{classcurlpp_1_1internal_1_1OptionContainer_a30fe5c33aef33f58cb6b6875c00fb8a0}{get\-Value} ()}\label{classcurlpp_1_1internal_1_1OptionContainer_a30fe5c33aef33f58cb6b6875c00fb8a0}
+
+\begin{DoxyCompactList}\small\item\em This function get the argument that is set on the handle. \end{DoxyCompactList}\item 
+\hyperlink{classcurlpp_1_1internal_1_1OptionContainer}{Option\-Container}$<$ Option\-Type $>$\\*
+\-::Handle\-Option\-Type \hyperlink{classcurlpp_1_1internal_1_1OptionContainer_a9930edf1e2a8e33a94688f52bb897bb2}{get\-Handle\-Option\-Value} ()
+\begin{DoxyCompactList}\small\item\em We call this function to have the value passed to the curl\-\_\-easy\-\_\-setopt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Option\-Type$>$class curlpp\-::internal\-::\-Option\-Container$<$ Option\-Type $>$}
+
+This class is used to set an option to a handle and to keep it's value. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcurlpp_1_1internal_1_1OptionContainer_ab4ae19d723a83601263feb52ad3584cc}{\index{curlpp\-::internal\-::\-Option\-Container@{curlpp\-::internal\-::\-Option\-Container}!Option\-Container@{Option\-Container}}
+\index{Option\-Container@{Option\-Container}!curlpp::internal::OptionContainer@{curlpp\-::internal\-::\-Option\-Container}}
+\subsubsection[{Option\-Container}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Option\-Type$>$ {\bf curlpp\-::internal\-::\-Option\-Container}$<$ Option\-Type $>$\-::{\bf Option\-Container} (
+\begin{DoxyParamCaption}
+\item[{typename {\bf Option\-Container}$<$ Option\-Type $>$\-::Param\-Type}]{value}
+\end{DoxyParamCaption}
+)}}\label{classcurlpp_1_1internal_1_1OptionContainer_ab4ae19d723a83601263feb52ad3584cc}
+
+
+Contructor. 
+
+We pass the value of the option. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcurlpp_1_1internal_1_1OptionContainer_a9930edf1e2a8e33a94688f52bb897bb2}{\index{curlpp\-::internal\-::\-Option\-Container@{curlpp\-::internal\-::\-Option\-Container}!get\-Handle\-Option\-Value@{get\-Handle\-Option\-Value}}
+\index{get\-Handle\-Option\-Value@{get\-Handle\-Option\-Value}!curlpp::internal::OptionContainer@{curlpp\-::internal\-::\-Option\-Container}}
+\subsubsection[{get\-Handle\-Option\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Option\-Type $>$ {\bf Option\-Container}$<$ Option\-Type $>$\-::Handle\-Option\-Type {\bf curlpp\-::internal\-::\-Option\-Container}$<$ Option\-Type $>$\-::get\-Handle\-Option\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcurlpp_1_1internal_1_1OptionContainer_a9930edf1e2a8e33a94688f52bb897bb2}
+
+
+We call this function to have the value passed to the curl\-\_\-easy\-\_\-setopt. 
+
+Note\-: D\-O N\-O\-T U\-S\-E T\-H\-I\-S F\-U\-N\-C\-T\-I\-O\-N! It's for internal use only. \hypertarget{classcurlpp_1_1internal_1_1OptionContainer_a2922047662c00e56a17e846093726b5b}{\index{curlpp\-::internal\-::\-Option\-Container@{curlpp\-::internal\-::\-Option\-Container}!set\-Value@{set\-Value}}
+\index{set\-Value@{set\-Value}!curlpp::internal::OptionContainer@{curlpp\-::internal\-::\-Option\-Container}}
+\subsubsection[{set\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Option\-Type$>$ void {\bf curlpp\-::internal\-::\-Option\-Container}$<$ Option\-Type $>$\-::set\-Value (
+\begin{DoxyParamCaption}
+\item[{typename {\bf Option\-Container}$<$ Option\-Type $>$\-::Param\-Type}]{value}
+\end{DoxyParamCaption}
+)}}\label{classcurlpp_1_1internal_1_1OptionContainer_a2922047662c00e56a17e846093726b5b}
+
+
+This function set the argument that will be passed to the option call for a handle. 
+
+It will use the argument passed to this function. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/curlpp/internal/Option\-Container.\-hpp\item 
+include/curlpp/internal/Option\-Container.\-inl\end{DoxyCompactItemize}

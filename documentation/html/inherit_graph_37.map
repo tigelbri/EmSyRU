@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classcurlpp_1_1RuntimeError.html" title="This class is a parent to all curlpp&#39;s RuntimeErrors. " alt="" coords="153,88,295,115"/>
+<area shape="rect" id="node3" href="$classcurlpp_1_1CallbackExceptionBase.html" title="This exception is thrown by the curlpp::raiseException function. " alt="" coords="345,12,549,39"/>
+<area shape="rect" id="node5" href="$classcurlpp_1_1LibcurlRuntimeError.html" title="This is a class derived from curlpp::RuntimeError. " alt="" coords="357,63,537,89"/>
+<area shape="rect" id="node6" href="$classcurlpp_1_1UnknowException.html" title="This exception is thrown when an exception is thrown within a callback without the curlpp::raiseExcep..." alt="" coords="361,113,532,140"/>
+<area shape="rect" id="node7" href="$classcurlpp_1_1UnsetOption.html" title="This exception is thrown when you try to retreive a value for an unset option. " alt="" coords="377,164,516,191"/>
+<area shape="rect" id="node4" href="$classcurlpp_1_1CallbackException.html" title="This exception is thrown by the curlpp::raiseException function. " alt="" coords="598,5,773,46"/>
+</map>

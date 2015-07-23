@@ -1,0 +1,23 @@
+Embedded System Remote \hyperlink{classUpdater}{Updater}
+
+Extreme lightweight tool for updating applications on embedded sytems. It uses two enviroments for automatic and secure updating. Also it delivers an option for a sanity check.
+
+\section*{R\-E\-Q\-U\-I\-R\-E\-M\-E\-N\-T\-S }
+
+
+\begin{DoxyItemize}
+\item G\-C\-C 4.\-8
+\item C\-Make 2.\-8
+\item Curl\-Dev (debian libcurl4-\/openssl-\/dev)
+\item Curl\-P\-P 0.\-2 (debian libcurlpp-\/dev)
+\end{DoxyItemize}
+
+\section*{I\-N\-S\-T\-A\-L\-L }
+
+mkdir build \&\& cd build cmake ../ make
+
+\section*{Example use }
+
+./\-Em\-Sy\-R\-U \char`\"{}user@ftp\-://path/to/jobfile\char`\"{} \char`\"{}password\char`\"{} ./\-Em\-Sy\-R\-U \char`\"{}user@ftp\-://path/to/jobfile\char`\"{} \char`\"{}password\char`\"{} \mbox{[}\char`\"{}/path/for/creating/workbench\char`\"{}\mbox{]}
+
+If no path for creating the workbench is given the workbench will be created next to executable 

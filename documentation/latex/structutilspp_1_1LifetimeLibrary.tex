@@ -1,0 +1,48 @@
+\hypertarget{structutilspp_1_1LifetimeLibrary}{\section{utilspp\-:\-:Lifetime\-Library$<$ T $>$ Struct Template Reference}
+\label{structutilspp_1_1LifetimeLibrary}\index{utilspp\-::\-Lifetime\-Library$<$ T $>$@{utilspp\-::\-Lifetime\-Library$<$ T $>$}}
+}
+
+
+This class is a lifetime policy for the singleton.  
+
+
+
+
+{\ttfamily \#include $<$Lifetime\-Library.\-hpp$>$}
+
+
+
+Collaboration diagram for utilspp\-:\-:Lifetime\-Library$<$ T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{structutilspp_1_1LifetimeLibrary__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structutilspp_1_1LifetimeLibrary_a7af7f33cb35f12ebccc192717ade7720}{static void {\bfseries schedule\-Destruction} (T $\ast$obj, void($\ast$func)())}\label{structutilspp_1_1LifetimeLibrary_a7af7f33cb35f12ebccc192717ade7720}
+
+\item 
+\hypertarget{structutilspp_1_1LifetimeLibrary_a3504154dda979768ed0c81dc4bf5d54e}{static void {\bfseries on\-Dead\-Reference} ()}\label{structutilspp_1_1LifetimeLibrary_a3504154dda979768ed0c81dc4bf5d54e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$struct utilspp\-::\-Lifetime\-Library$<$ T $>$}
+
+This class is a lifetime policy for the singleton. 
+
+This class allow you to terminate the singleton explicitly. You can terminate by calling\-:
+
+Lifetime\-Library\-Singleton\-::instance().terminate()
+
+This singleton use the \hyperlink{structutilspp_1_1LifetimeWithLongevity}{utilspp\-::\-Lifetime\-With\-Longevity} policy. 
+
+The documentation for this struct was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/utilspp/singleton/Lifetime\-Library.\-hpp\item 
+include/utilspp/singleton/Lifetime\-Library.\-inl\end{DoxyCompactItemize}

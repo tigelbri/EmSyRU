@@ -1,0 +1,9 @@
+<map id="curlpp::OptionBase" name="curlpp::OptionBase">
+<area shape="rect" id="node2" href="$classcurlpp_1_1Option.html" title="This class is representing an option that you set on a class. " alt="" coords="5,235,157,415"/>
+<area shape="rect" id="node3" href="$classcurlpp_1_1Option.html" title="{curlpp::Option\&lt; bool \&gt;\n|# mContainer\l|+ ~Option()\l+ setValue()\l+ getValue()\l+ clear()\l+ updateMeToOption()\l# Option()\l# Option()\l# Option()\l}" alt="" coords="181,235,333,415"/>
+<area shape="rect" id="node6" href="$classcurlpp_1_1Option.html" title="{curlpp::Option\&lt; OptionType \&gt;\n|# mContainer\l|+ ~Option()\l+ setValue()\l+ getValue()\l+ clear()\l+ updateMeToOption()\l# Option()\l# Option()\l# Option()\l}" alt="" coords="357,235,552,415"/>
+<area shape="rect" id="node4" href="$classcurlpp_1_1OptionTrait.html" title="{curlpp::OptionTrait\l\&lt; bool, option \&gt;\n|+ option\l|+ OptionTrait()\l+ OptionTrait()\l+ clone()\l}" alt="" coords="193,465,321,586"/>
+<area shape="rect" id="node5" href="$classcurlpp_1_1NoValueOptionTrait.html" title="This class is just a wrapper around curlpp::OptionTrait, in order to be able to have &quot;No value&quot; optio..." alt="" coords="168,635,347,741"/>
+<area shape="rect" id="node7" href="$classcurlpp_1_1NotAvailableOptionTrait.html" title="This class is used when the option is not implemented. " alt="" coords="355,465,535,586"/>
+<area shape="rect" id="node8" href="$classcurlpp_1_1OptionTrait.html" title="This class is just a wrapper around curlpp::Option, in order to be able to typedef Options..." alt="" coords="560,465,699,586"/>
+</map>

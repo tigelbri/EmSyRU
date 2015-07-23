@@ -1,0 +1,55 @@
+\hypertarget{classcurlpp_1_1LibcurlRuntimeError}{\section{curlpp\-:\-:Libcurl\-Runtime\-Error Class Reference}
+\label{classcurlpp_1_1LibcurlRuntimeError}\index{curlpp\-::\-Libcurl\-Runtime\-Error@{curlpp\-::\-Libcurl\-Runtime\-Error}}
+}
+
+
+This is a class derived from \hyperlink{classcurlpp_1_1RuntimeError}{curlpp\-::\-Runtime\-Error}.  
+
+
+
+
+{\ttfamily \#include $<$Exception.\-hpp$>$}
+
+
+
+Inheritance diagram for curlpp\-:\-:Libcurl\-Runtime\-Error\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classcurlpp_1_1LibcurlRuntimeError__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for curlpp\-:\-:Libcurl\-Runtime\-Error\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classcurlpp_1_1LibcurlRuntimeError__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcurlpp_1_1LibcurlRuntimeError_ac12552bff88ba246f7f2955d38111195}{{\bfseries Libcurl\-Runtime\-Error} (const std\-::string \&reason, C\-U\-R\-Lcode code)}\label{classcurlpp_1_1LibcurlRuntimeError_ac12552bff88ba246f7f2955d38111195}
+
+\item 
+\hypertarget{classcurlpp_1_1LibcurlRuntimeError_ab69096e7d31046d04225694c6e2a8a43}{{\bfseries Libcurl\-Runtime\-Error} (const char $\ast$reason, C\-U\-R\-Lcode code)}\label{classcurlpp_1_1LibcurlRuntimeError_ab69096e7d31046d04225694c6e2a8a43}
+
+\item 
+\hypertarget{classcurlpp_1_1LibcurlRuntimeError_aa101aee12fe88d1a36ce37fdbd297da0}{C\-U\-R\-Lcode \hyperlink{classcurlpp_1_1LibcurlRuntimeError_aa101aee12fe88d1a36ce37fdbd297da0}{what\-Code} () const   throw ()}\label{classcurlpp_1_1LibcurlRuntimeError_aa101aee12fe88d1a36ce37fdbd297da0}
+
+\begin{DoxyCompactList}\small\item\em Returns the C\-U\-R\-Lcode that libcurl returned. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a class derived from \hyperlink{classcurlpp_1_1RuntimeError}{curlpp\-::\-Runtime\-Error}. 
+
+It takes a const char $\ast$ and a C\-U\-R\-Lcode as arguments. This class is thrown when libcurl is returning an error with a C\-U\-R\-Lcode, but for runtime considerations, \char`\"{}unpredictable\char`\"{} by the library user. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/curlpp/Exception.\-hpp\item 
+src/curlpp/Exception.\-cpp\end{DoxyCompactItemize}

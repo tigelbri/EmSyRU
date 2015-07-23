@@ -1,0 +1,7 @@
+<map id="curlpp::RuntimeError" name="curlpp::RuntimeError">
+<area shape="rect" id="node3" href="$classcurlpp_1_1CallbackExceptionBase.html" title="This exception is thrown by the curlpp::raiseException function. " alt="" coords="5,286,208,407"/>
+<area shape="rect" id="node5" href="$classcurlpp_1_1LibcurlRuntimeError.html" title="This is a class derived from curlpp::RuntimeError. " alt="" coords="233,293,412,400"/>
+<area shape="rect" id="node6" href="$classcurlpp_1_1UnknowException.html" title="This exception is thrown when an exception is thrown within a callback without the curlpp::raiseExcep..." alt="" coords="437,308,608,385"/>
+<area shape="rect" id="node7" href="$classcurlpp_1_1UnsetOption.html" title="This exception is thrown when you try to retreive a value for an unset option. " alt="" coords="632,301,771,393"/>
+<area shape="rect" id="node4" href="$classcurlpp_1_1CallbackException.html" title="This exception is thrown by the curlpp::raiseException function. " alt="" coords="19,457,193,578"/>
+</map>

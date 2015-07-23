@@ -1,0 +1,4 @@
+<map id="curlpp::CallbackException&lt; ExceptionType &gt;" name="curlpp::CallbackException&lt; ExceptionType &gt;">
+<area shape="rect" id="node2" href="$classcurlpp_1_1CallbackExceptionBase.html" title="This exception is thrown by the curlpp::raiseException function. " alt="" coords="5,286,208,407"/>
+<area shape="rect" id="node3" href="$classcurlpp_1_1RuntimeError.html" title="This class is a parent to all curlpp&#39;s RuntimeErrors. " alt="" coords="35,131,177,237"/>
+</map>

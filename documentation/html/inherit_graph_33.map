@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classcurlpp_1_1LogicError.html" title="This class is a parent to all curlpp&#39;s RuntimeErrors. " alt="" coords="137,31,261,57"/>
+<area shape="rect" id="node3" href="$classcurlpp_1_1LibcurlLogicError.html" title="curlpp::LibcurlLogicError" alt="" coords="309,5,472,32"/>
+<area shape="rect" id="node4" href="$classcurlpp_1_1NotAvailable.html" title="This exception is thrown when you try to instantiate an option that isn&#39;t available for your current ..." alt="" coords="321,56,460,83"/>
+</map>
