@@ -85,7 +85,7 @@ public:
 	//int getUpdateFiles(string dir, string upFile, std::vector<string>& files);
 	//int createDir(string dir, mode_t mode);
 	
-	static Logger log_;
+	static Logger log_; /**< Logger for tracking and generating report to upload */
 	static void setLogger(Logger& log){log_ = log; UnixBridge::setLogger(log);}
 	
 private:

@@ -51,6 +51,13 @@ using std::cout;
 using std::endl;
 
 /**
+* @file EmSyRU.hpp
+* @brief class with EmSyRU application 
+* @author Tristan Igelbrink
+* @date 24.03.2015
+*/
+
+/**
  * @brief  Class for Emdedded System Remote Updater
  */
 class EmSyRU
@@ -59,6 +66,11 @@ class EmSyRU
 public:
     /**
     * @brief Ctor
+    * 
+    *@param string with user name
+    *@param string with url
+    *@param string with password
+    *@param optional string with enviroment to extract files
     */
     EmSyRU(string user, string dlURL, string pw, string env  = "");
     
@@ -68,27 +80,51 @@ public:
     */
     ~EmSyRU();
 
+	/**
+	* Starts the whole update process
+	* This Method uses the given url user and pw to download a jobfile
+	* extracting and scanning it and updates its packages
+	* @return int with succsess 1 or fail 0
+	*/
 	int update();
 	
-	static Logger log_;
+	static Logger log_; /**< Logger for tracking and generating report to upload */
+	
+	/**
+	* Setter for logger
+	* @param Logger
+	*/
 	static void setLogger(Logger& log){log_ = log; UnixBridge::setLogger(log);}
 	
 private:
 
+		/**
+		* Function for uploading the generated logfile to given url
+		*/
         void uploadLog();
+		
+		/**
+		* Searches for job config file in downloaded job file
+		* @return int with succsess 1 or fail 0
+		*/
         int findJobConfFile();
+        
+        /**
+		* Checks if the workbench is clean and works it off if not
+		* @return int with succsess 1 or fail 0
+		*/
         int prepareWorkbench();
        
-        string packageFile_ = "Packages.conf";
-		string logFile_ = "job.log";
-		string dlURL_;
-		string upURL_;
-		string env_;
-		string jobFile_;
-		string jobConfFile_ = "Job.conf";
-        Updater  up_;
-        UnixBridge ub_;
-		CurlCommunicator curli_;
+        string packageFile_ = "Packages.conf";  /**< Path to Package DB*/
+		string logFile_ = "job.log";            /**< Logfile for tracking*/
+		string dlURL_;                          /**< URL to download */
+		string upURL_;                          /**< URL to upload*/
+		string env_;                            /**< place extract job file*/
+		string jobFile_;                        /**< Downloaded job file*/
+		string jobConfFile_ = "Job.conf";       /**< job config file determined*/
+        Updater  up_;                           /**< Handles the update process*/
+        UnixBridge ub_;                         /**< Handles connection to unix*/
+		CurlCommunicator curli_;                /**< Handles server communication*/
 
 		
 };

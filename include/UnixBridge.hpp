@@ -28,6 +28,13 @@
 #ifndef UNIXBRIDGE_HPP
 #define UNIXBRIDGE_HPP
 
+/**
+* @file UnixBridge.hpp
+* @brief Class for interaction with unix systems 
+* @author Tristan Igelbrink
+* @date 18.03.2015
+*/
+
 #include <string>
 #include <vector>
 #include <iostream>
@@ -62,21 +69,68 @@ public:
      */
     ~UnixBridge();
     
+	/**
+	* Creates a symbolic link to given file
+	* @param string with name of symbolic link
+	* @param string with file to link to
+	* @return int with succsess 1 or fail 0
+	*/
     int createSymbolicLink(string name, string content);
 
+	/**
+	* Read the content of a symbolic link
+	* @param string link to read
+	* @return string with content if fail ""
+	*/
     string getSymLink(string link);
     
+    /**
+	* C++ wrapper for unix mv
+	* @param string with file to move
+	* @param string target
+	* @return int with succsess 1 or fail 0
+	*/
     int mvFile(string in, string out);
 
+	/**
+	* C++ wrapper for unix rm -r
+	* @param string with directory to delete
+	* @return int with succsess 1 or fail 0
+	*/
     int deleteDir(string dir);
     
+    /**
+	* C++ wrapper for unix mv -r
+	* @param string with directory to move
+	* @param string with target
+	* @return int with succsess 1 or fail 0
+	*/
 	int	mvDir(string move_from, string move_to);
 	
+	/**
+	* Collects all filenames of a given directory and can skip a config file
+	* @param string with target directory
+	* @param string with file name to skip
+	* @param vector with filenames
+	* @return int with succsess 1 or fail 0
+	*/
 	int getFiles(string dir, string upFile, std::vector<string>& files);
 	
+	/**
+	* Collects all filenames of a given directory and can skip a config file
+	* @param string with directory name
+	* @param mode_t set unix rights for new directory
+	* @return int with succsess 1 or fail 0
+	*/
 	int createDir(string dir, mode_t mode);
 
-	static Logger log_;
+	
+	static Logger log_; /**< Logger for tracking and generating report to upload */
+	
+	/**
+	* Setter for logger
+	* @param Logger
+	*/
 	static void setLogger(Logger& log){log_ = log;}
 
 };

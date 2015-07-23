@@ -36,6 +36,13 @@
 using std::ofstream;
 using std::ostream;
 
+/**
+* @file Logger.hpp
+* @brief Logger class for report generation 
+* @author Tristan Igelbrink
+* @date 18.03.2015
+*/
+
 class Logger
 {
 public:

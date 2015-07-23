@@ -27,7 +27,7 @@
 
 /**
 * @file CurlCommunicator.hpp
-* @brief Package class for holding and controling packages to update
+* @brief class for communication
 * @author Tristan Igelbrink
 * @date 20.03.2015
 */
@@ -55,20 +55,29 @@ using std::endl;
 using std::ifstream;
 using std::ofstream;
 using namespace curlpp::options;
-//#define CURL_SIZEOF_LONG 4
 
 /**
- * @brief   Pacakge class with all relevant package informations
+ * @brief   Class for communication 
+ * This class provides the communication for downloading job files or uploading log files.
+ * To communicate with the server the curl libary is used
  */
 class CurlCommunicator
 {
 
 public:
 
+	/**
+    * @brief Ctor
+    */
 	 CurlCommunicator();
 
     /**
     * @brief Ctor
+    * 
+    *@param string with user name
+    *@param string with password
+    *@param int with time for connection timeout in seconds
+    *@param int with amount of retries to make before say connection falied
     */
     CurlCommunicator(string user, string pw, int timeOutSec, int retries);
 
@@ -76,24 +85,61 @@ public:
     * @brief Dtor
     */
     ~CurlCommunicator();
+    
+    /**
+	* Upload a given file to the given url
+	* @param string with url
+	* @param string with file to upload
+	* @return int with succsess 1 or fail 0
+	*/
     int startUpload(string url, string saveFilename);
+    
+    /**
+	* Downloads a requested file from the given url
+	* @param string with url
+	* @param string with file to download to
+	* @return int with succsess 1 or fail 0
+	*/
     int startDownload(string url, string saveFilename);
-    static Logger log_;
+    
+    
+    static Logger log_; /**< Logger for tracking and generating report to upload */
+    
+    /**
+	* Setter for logger
+	* @param Logger
+	*/
 	static void setLogger(Logger& log){log_ = log;}
 
 private:
 
-	string m_URL;
-	string m_file;
-	string user_;
-	string pw_;
-	int m_retries;
-	int m_timeoutSec;
-	int m_retryCount;
+	string m_URL;        /**< URL to work with */
+	string m_file;       /**< file to upload */
+	string user_;        /**< username  for server */
+	string pw_;          /**< password for server */
+	int m_retries;       /**< number of retries for connection */
+	int m_timeoutSec;    /**< time in seconds to wait befor timing out */
+	int m_retryCount;    /**< actual number of retry */
 	
+	/**
+	* One single donwload try
+	* If it fails or is interrupted the Download is restarted at the old byteoffset 
+	* @param int with actual retry
+	* @return int with succsess 1 or fail 0
+	*/
 	int tryDownload(int tryCount);
+	
+	/**
+	* One single upload try
+	* If it fails or is interrupted the Upload is restarted at the old byteoffset 
+	* @param int with actual retry
+	* @return int with succsess 1 or fail 0
+	*/
 	int tryUpload(int tryCount);
 	
+	/**
+	 * @brief  Internal helper class for writing downloaded files  
+	 */
 	struct CurlWriter
 	{
 	public:
@@ -120,6 +166,10 @@ private:
 	  int* count_;
 	};
 
+
+	/**
+	 * @brief  Internal helper class for checking the communication progress 
+	 */
 	class CurlProgress
 	{
 	public:
