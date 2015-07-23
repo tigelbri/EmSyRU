@@ -27,7 +27,7 @@ link_directories("${CMAKE_SOURCE_DIR}/lib")
 # special optimization flags
 ###############################################################################
 
-set( CMAKE_CXX_FLAGS         "-std=c++11 -O3 -Wall" )
+set( CMAKE_CXX_FLAGS         "-std=c++11 -O3 -w " )
 set( CMAKE_CXX_FLAGS_RELEASE "-std=c++11 -O3 -msse3 -Wno-deprecated-declarations -Wno-unused -Wcpp" )
 set( CMAKE_CXX_FLAGS_DEBUG   "-std=c++11 -g -O0 -Wall" )
 
