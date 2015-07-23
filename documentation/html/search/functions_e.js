@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['_7ecurlcommunicator',['~CurlCommunicator',['../classCurlCommunicator.html#ae6280940aaed63c9d8d4da2a930eb719',1,'CurlCommunicator']]],
-  ['_7eemsyru',['~EmSyRU',['../classEmSyRU.html#abad85d79a8bd0176f4a7f95d1df2f03e',1,'EmSyRU']]],
-  ['_7elogger',['~Logger',['../classLogger.html#acb668a9e186a25fbaad2e4af6d1ed00a',1,'Logger']]],
-  ['_7eoption',['~Option',['../classcurlpp_1_1Option.html#a116d6c5ee8953d0c947f589a44574c53',1,'curlpp::Option']]],
-  ['_7eoptionbase',['~OptionBase',['../classcurlpp_1_1OptionBase.html#a9bad6d1c34bdc65bdee07014f88ffcc4',1,'curlpp::OptionBase']]],
-  ['_7eunixbridge',['~UnixBridge',['../classUnixBridge.html#a1902ba975703ecfe5eecd810c39c671d',1,'UnixBridge']]],
-  ['_7eupdater',['~Updater',['../classUpdater.html#a2f8434a97a4f3d3c716bb05abb20621e',1,'Updater']]]
+  ['unixbridge',['UnixBridge',['../classUnixBridge.html#a89812476ce97c7bdc4ae8e6160e583bb',1,'UnixBridge']]],
+  ['update',['update',['../classEmSyRU.html#aeccfb365e5aac8a9b5fee2557645353d',1,'EmSyRU']]],
+  ['updatehandletome',['updateHandleToMe',['../classcurlpp_1_1OptionBase.html#afb0c70db0e956992caa731031ec3c825',1,'curlpp::OptionBase']]],
+  ['updatemetooption',['updateMeToOption',['../classcurlpp_1_1Option.html#a838ca4e7bf68f5ded3e33455fc546151',1,'curlpp::Option::updateMeToOption()'],['../classcurlpp_1_1OptionBase.html#a6dfedf51cd176e02b46e0e2a2e8fa775',1,'curlpp::OptionBase::updateMeToOption()']]],
+  ['updater',['Updater',['../classUpdater.html#aa950c2607183639f95deff560e001602',1,'Updater']]]
 ];

@@ -14,7 +14,10 @@
    id="svg3166"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="workflow.svg">
+   sodipodi:docname="workflow.svg"
+   inkscape:export-filename="/home/tristan/EmSyRU/documentation/workflow.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs3168">
     <marker
@@ -44,9 +47,9 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1215"
-     inkscape:window-height="1000"
-     inkscape:window-x="65"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1" />
   <metadata
@@ -266,7 +269,7 @@
          sodipodi:role="line"
          id="tspan5693"
          x="736.92908"
-         y="609.82538">Bearbeite</tspan><tspan
+         y="609.82538">Process</tspan><tspan
          sodipodi:role="line"
          x="739.79431"
          y="632.32538"
@@ -297,22 +300,15 @@
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="547.62372"
-       y="647.75714"
+       x="535.95239"
+       y="666.23669"
        id="text5707"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan5709"
-         x="549.85223"
-         y="647.75714">Entschlüsseln </tspan><tspan
-         sodipodi:role="line"
-         x="549.85223"
-         y="665.25714"
-         id="tspan5711">und </tspan><tspan
-         sodipodi:role="line"
-         x="547.62372"
-         y="682.75714"
-         id="tspan5713">entpacken</tspan></text>
+         x="535.95239"
+         y="666.23669"
+         id="tspan5713"
+         style="font-size:20px">Extract files</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
@@ -327,32 +323,32 @@
     <text
        xml:space="preserve"
        style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="282.52097"
-       y="728.58643"
+       x="288.35663"
+       y="710.10687"
        id="text5715-5"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5717-2"
-         x="285.06784"
-         y="728.58643">Verschlüsselte </tspan><tspan
+         x="288.35663"
+         y="710.10687" /><tspan
          sodipodi:role="line"
-         x="282.52097"
-         y="748.58643"
+         x="288.35663"
+         y="730.10687"
          id="tspan5740">Logfile</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
-       x="213.97382"
-       y="331.65942"
+       x="298.59073"
+       y="332.63202"
        id="text5742"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5744"
-         x="213.97382"
-         y="331.65942"></tspan><tspan
+         x="298.59073"
+         y="332.63202" /><tspan
          sodipodi:role="line"
          id="tspan5746"
-         x="213.97382"
-         y="356.65942">Workflow des Embedded System Remote Updater</tspan></text>
+         x="298.59073"
+         y="357.63202">Workflow Embedded System Remote Updater</tspan></text>
   </g>
 </svg>

@@ -1,0 +1,33 @@
+Embedded System Remote \hyperlink{classUpdater}{Updater}
+
+Extreme lightweight package manager for updating applications on embedded sytems. It uses two enviroments for automatic and secure updating. It automatically starts a recover version in case of updating failure Also it delivers an option for a sanity check.
+
+Applications are stored as Packages (see Packages.\-conf for example) Applications can be updated by Job files (see examples/ for example Job files)
+
+Job files are tars which has to deliver a Job.\-conf file with defined Tasks in it (see Template.\-conf) Following Tasks are supported (Add, Update and Remove) New or update files has to be in a folder with their package name. One Job.\-conf can content multiply Tasks.
+
+The \hyperlink{classEmSyRU}{Em\-Sy\-R\-U} downloads the given Job File and automaticlly checks the Packages versions and update them. A Report of the updating process is been uploaded back again.
+
+Copyright (c) 2015, Tristan Igelbrink
+
+This Application uses the Curl\-P\-P Packages (Copyright (c) $<$2002-\/2009$>$ $<$Jean-\/\-Philippe Barrette-\/\-La\-Pierre$>$)
+
+\section*{R\-E\-Q\-U\-I\-R\-E\-M\-E\-N\-T\-S }
+
+
+\begin{DoxyItemize}
+\item G\-C\-C 4.\-8
+\item C\-Make 2.\-8
+\item Curl\-Dev (debian libcurl4-\/openssl-\/dev)
+\item Curl\-P\-P 0.\-2 (debian libcurlpp-\/dev)
+\end{DoxyItemize}
+
+\section*{I\-N\-S\-T\-A\-L\-L }
+
+mkdir build \&\& cd build cmake ../ make
+
+\section*{Example use }
+
+./\-Em\-Sy\-R\-U \char`\"{}user@ftp\-://path/to/jobfile\char`\"{} \char`\"{}password\char`\"{} ./\-Em\-Sy\-R\-U \char`\"{}user@ftp\-://path/to/jobfile\char`\"{} \char`\"{}password\char`\"{} \mbox{[}\char`\"{}/path/for/creating/workbench\char`\"{}\mbox{]}
+
+If no path for creating the workbench is given the workbench will be created next to executable 

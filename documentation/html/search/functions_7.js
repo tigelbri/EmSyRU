@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['operator_3c',['operator&lt;',['../classcurlpp_1_1OptionBase.html#aca2d80b6f3ab9fd59946c8f0580962ea',1,'curlpp::OptionBase']]],
-  ['operator_3d',['operator=',['../classcurlpp_1_1HttpPost.html#a87ce1f2b173a97b2e1aae8b0ed89dcfb',1,'curlpp::HttpPost']]],
-  ['option',['option',['../classcurlpp_1_1internal_1_1CurlHandle.html#a715e437b50f34871318e8256d7c78765',1,'curlpp::internal::CurlHandle::option(CURLoption option, OptionType value)'],['../classcurlpp_1_1internal_1_1CurlHandle.html#af7cf67e4dfc41b2da23a6005b0f396d3',1,'curlpp::internal::CurlHandle::option(OptionType value)'],['../classcurlpp_1_1Option.html#a4fdf55cf8f735e44a0a39c617f0e641b',1,'curlpp::Option::Option(CURLoption option, typename Option&lt; OptionType &gt;::ParamType value)'],['../classcurlpp_1_1Option.html#a35d366e9aa8649632b298bb1c42acde3',1,'curlpp::Option::Option(const Option&lt; OptionType &gt; &amp;other)'],['../classcurlpp_1_1Option.html#a86f7d7bf4ce8ebd8448c0a4658b521ee',1,'curlpp::Option::Option(CURLoption option)']]],
-  ['optioncontainer',['OptionContainer',['../classcurlpp_1_1internal_1_1OptionContainer.html#ab4ae19d723a83601263feb52ad3584cc',1,'curlpp::internal::OptionContainer']]],
-  ['optionlist',['OptionList',['../classcurlpp_1_1internal_1_1OptionList.html#ab4ab4f470c3c916ed0d06469a280fb2e',1,'curlpp::internal::OptionList::OptionList()'],['../classcurlpp_1_1internal_1_1OptionList.html#a2deec6668c1e69eafb2ac7259b3fa534',1,'curlpp::internal::OptionList::OptionList(const OptionList &amp;rhs)']]],
-  ['optiontrait',['OptionTrait',['../classcurlpp_1_1OptionTrait.html#a8798a968833b5f95ae0c4da466232906',1,'curlpp::OptionTrait::OptionTrait(typename Option&lt; OptionType &gt;::ParamType value)'],['../classcurlpp_1_1OptionTrait.html#a345c9d4f8468a716c7954666f22fb9d8',1,'curlpp::OptionTrait::OptionTrait()']]]
+  ['mvdir',['mvDir',['../classUnixBridge.html#a9c44f87fedf0e1933e084c4f9c8571dc',1,'UnixBridge']]],
+  ['mvfile',['mvFile',['../classUnixBridge.html#adc00f8d0d5dd0a3b2cbb654172ec8902',1,'UnixBridge']]]
 ];

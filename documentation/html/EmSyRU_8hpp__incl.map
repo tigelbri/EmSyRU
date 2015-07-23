@@ -1,7 +1,7 @@
 <map id="include/EmSyRU.hpp" name="include/EmSyRU.hpp">
 <area shape="rect" id="node2" href="$Updater_8hpp.html" title="Package class for holding and controling packages to update. " alt="" coords="763,80,856,107"/>
 <area shape="rect" id="node19" href="$Logger_8hpp.html" title="Logger class for report generation. " alt="" coords="206,229,292,256"/>
-<area shape="rect" id="node22" href="$UnixBridge_8hpp.html" title="Class for ineraction with unix systems. " alt="" coords="953,155,1063,181"/>
+<area shape="rect" id="node22" href="$UnixBridge_8hpp.html" title="Class for interaction with unix systems. " alt="" coords="953,155,1063,181"/>
 <area shape="rect" id="node24" href="$CurlCommunicator_8hpp.html" title="class for communication " alt="" coords="1838,80,1993,107"/>
 <area shape="rect" id="node17" href="$Timestamp_8hpp.html" title="Logger class for report generation. " alt="" coords="181,304,292,331"/>
 <area shape="rect" id="node25" href="$cURLpp_8hpp_source.html" title="curlpp/cURLpp.hpp" alt="" coords="2099,155,2233,181"/>

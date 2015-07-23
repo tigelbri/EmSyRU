@@ -3,8 +3,7 @@
 }
 
 
-Collaboration diagram for Unix\-Bridge\-:
-\nopagebreak
+Collaboration diagram for Unix\-Bridge\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,39 +19,201 @@ Collaboration diagram for Unix\-Bridge\-:
 \hypertarget{classUnixBridge_a1902ba975703ecfe5eecd810c39c671d}{\hyperlink{classUnixBridge_a1902ba975703ecfe5eecd810c39c671d}{$\sim$\-Unix\-Bridge} ()}\label{classUnixBridge_a1902ba975703ecfe5eecd810c39c671d}
 
 \begin{DoxyCompactList}\small\item\em Dtor. \end{DoxyCompactList}\item 
-\hypertarget{classUnixBridge_ab27429b32f913986d0aac1c69bcba6f3}{int {\bfseries create\-Symbolic\-Link} (string name, string content)}\label{classUnixBridge_ab27429b32f913986d0aac1c69bcba6f3}
-
-\item 
-\hypertarget{classUnixBridge_a818d57b1f182e3fe4dcf84eb5b6e5df1}{string {\bfseries get\-Sym\-Link} (string link)}\label{classUnixBridge_a818d57b1f182e3fe4dcf84eb5b6e5df1}
-
-\item 
-\hypertarget{classUnixBridge_adc00f8d0d5dd0a3b2cbb654172ec8902}{int {\bfseries mv\-File} (string in, string out)}\label{classUnixBridge_adc00f8d0d5dd0a3b2cbb654172ec8902}
-
-\item 
-\hypertarget{classUnixBridge_a721962a7dd9e4654d32c171854f7fbce}{int {\bfseries delete\-Dir} (string dir)}\label{classUnixBridge_a721962a7dd9e4654d32c171854f7fbce}
-
-\item 
-\hypertarget{classUnixBridge_a9c44f87fedf0e1933e084c4f9c8571dc}{int {\bfseries mv\-Dir} (string move\-\_\-from, string move\-\_\-to)}\label{classUnixBridge_a9c44f87fedf0e1933e084c4f9c8571dc}
-
-\item 
-\hypertarget{classUnixBridge_a92f44a047ec7bb277151363bea147054}{int {\bfseries get\-Files} (string dir, string up\-File, std\-::vector$<$ string $>$ \&files)}\label{classUnixBridge_a92f44a047ec7bb277151363bea147054}
-
-\item 
-\hypertarget{classUnixBridge_a1357f426d25f8093b1f8ccc1bb01be0e}{int {\bfseries create\-Dir} (string dir, mode\-\_\-t mode)}\label{classUnixBridge_a1357f426d25f8093b1f8ccc1bb01be0e}
-
-\end{DoxyCompactItemize}
+int \hyperlink{classUnixBridge_ab27429b32f913986d0aac1c69bcba6f3}{create\-Symbolic\-Link} (string name, string content)
+\begin{DoxyCompactList}\small\item\em Creates a symbolic link to given file. \end{DoxyCompactList}\item 
+string \hyperlink{classUnixBridge_a818d57b1f182e3fe4dcf84eb5b6e5df1}{get\-Sym\-Link} (string link)
+\begin{DoxyCompactList}\small\item\em Read the content of a symbolic link. \end{DoxyCompactList}\item 
+int \hyperlink{classUnixBridge_adc00f8d0d5dd0a3b2cbb654172ec8902}{mv\-File} (string in, string out)
+\begin{DoxyCompactList}\small\item\em C++ wrapper for unix mv. \end{DoxyCompactList}\item 
+int \hyperlink{classUnixBridge_a721962a7dd9e4654d32c171854f7fbce}{delete\-Dir} (string dir)
+\begin{DoxyCompactList}\small\item\em C++ wrapper for unix rm -\/r. \end{DoxyCompactList}\item 
+int \hyperlink{classUnixBridge_a9c44f87fedf0e1933e084c4f9c8571dc}{mv\-Dir} (string move\-\_\-from, string move\-\_\-to)
+\begin{DoxyCompactList}\small\item\em C++ wrapper for unix mv -\/r. \end{DoxyCompactList}\item 
+int \hyperlink{classUnixBridge_a92f44a047ec7bb277151363bea147054}{get\-Files} (string dir, string up\-File, std\-::vector$<$ string $>$ \&files)
+\begin{DoxyCompactList}\small\item\em Collects all filenames of a given directory and can skip a config file. \end{DoxyCompactList}\item 
+int \hyperlink{classUnixBridge_a1357f426d25f8093b1f8ccc1bb01be0e}{create\-Dir} (string dir, mode\-\_\-t mode)
+\begin{DoxyCompactList}\small\item\em Collects all filenames of a given directory and can skip a config file. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classUnixBridge_a2f081bb6ceae9693c1160b3530c937ca}{static void {\bfseries set\-Logger} (\hyperlink{classLogger}{Logger} \&log)}\label{classUnixBridge_a2f081bb6ceae9693c1160b3530c937ca}
-
-\end{DoxyCompactItemize}
+static void \hyperlink{classUnixBridge_a2f081bb6ceae9693c1160b3530c937ca}{set\-Logger} (\hyperlink{classLogger}{Logger} \&log)
+\begin{DoxyCompactList}\small\item\em Setter for logger. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classUnixBridge_a92b187da548fa7346ed7d7eecec22a32}{static \hyperlink{classLogger}{Logger} {\bfseries log\-\_\-} = \hyperlink{classLogger}{Logger}()}\label{classUnixBridge_a92b187da548fa7346ed7d7eecec22a32}
+\hypertarget{classUnixBridge_a92b187da548fa7346ed7d7eecec22a32}{static \hyperlink{classLogger}{Logger} \hyperlink{classUnixBridge_a92b187da548fa7346ed7d7eecec22a32}{log\-\_\-} = \hyperlink{classLogger}{Logger}()}\label{classUnixBridge_a92b187da548fa7346ed7d7eecec22a32}
 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classLogger}{Logger} for tracking and generating report to upload. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classUnixBridge_a1357f426d25f8093b1f8ccc1bb01be0e}{\index{Unix\-Bridge@{Unix\-Bridge}!create\-Dir@{create\-Dir}}
+\index{create\-Dir@{create\-Dir}!UnixBridge@{Unix\-Bridge}}
+\subsubsection[{create\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}int Unix\-Bridge\-::create\-Dir (
+\begin{DoxyParamCaption}
+\item[{string}]{dir, }
+\item[{mode\-\_\-t}]{mode}
+\end{DoxyParamCaption}
+)}}\label{classUnixBridge_a1357f426d25f8093b1f8ccc1bb01be0e}
+
+
+Collects all filenames of a given directory and can skip a config file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & with directory name \\
+\hline
+{\em mode\-\_\-t} & set unix rights for new directory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int with succsess 1 or fail 0 
+\end{DoxyReturn}
+\hypertarget{classUnixBridge_ab27429b32f913986d0aac1c69bcba6f3}{\index{Unix\-Bridge@{Unix\-Bridge}!create\-Symbolic\-Link@{create\-Symbolic\-Link}}
+\index{create\-Symbolic\-Link@{create\-Symbolic\-Link}!UnixBridge@{Unix\-Bridge}}
+\subsubsection[{create\-Symbolic\-Link}]{\setlength{\rightskip}{0pt plus 5cm}int Unix\-Bridge\-::create\-Symbolic\-Link (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{string}]{content}
+\end{DoxyParamCaption}
+)}}\label{classUnixBridge_ab27429b32f913986d0aac1c69bcba6f3}
+
+
+Creates a symbolic link to given file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & with name of symbolic link \\
+\hline
+{\em string} & with file to link to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int with succsess 1 or fail 0 
+\end{DoxyReturn}
+\hypertarget{classUnixBridge_a721962a7dd9e4654d32c171854f7fbce}{\index{Unix\-Bridge@{Unix\-Bridge}!delete\-Dir@{delete\-Dir}}
+\index{delete\-Dir@{delete\-Dir}!UnixBridge@{Unix\-Bridge}}
+\subsubsection[{delete\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}int Unix\-Bridge\-::delete\-Dir (
+\begin{DoxyParamCaption}
+\item[{string}]{dir}
+\end{DoxyParamCaption}
+)}}\label{classUnixBridge_a721962a7dd9e4654d32c171854f7fbce}
+
+
+C++ wrapper for unix rm -\/r. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & with directory to delete \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int with succsess 1 or fail 0 
+\end{DoxyReturn}
+\hypertarget{classUnixBridge_a92f44a047ec7bb277151363bea147054}{\index{Unix\-Bridge@{Unix\-Bridge}!get\-Files@{get\-Files}}
+\index{get\-Files@{get\-Files}!UnixBridge@{Unix\-Bridge}}
+\subsubsection[{get\-Files}]{\setlength{\rightskip}{0pt plus 5cm}int Unix\-Bridge\-::get\-Files (
+\begin{DoxyParamCaption}
+\item[{string}]{dir, }
+\item[{string}]{up\-File, }
+\item[{std\-::vector$<$ string $>$ \&}]{files}
+\end{DoxyParamCaption}
+)}}\label{classUnixBridge_a92f44a047ec7bb277151363bea147054}
+
+
+Collects all filenames of a given directory and can skip a config file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & with target directory \\
+\hline
+{\em string} & with file name to skip \\
+\hline
+{\em vector} & with filenames \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int with succsess 1 or fail 0 
+\end{DoxyReturn}
+\hypertarget{classUnixBridge_a818d57b1f182e3fe4dcf84eb5b6e5df1}{\index{Unix\-Bridge@{Unix\-Bridge}!get\-Sym\-Link@{get\-Sym\-Link}}
+\index{get\-Sym\-Link@{get\-Sym\-Link}!UnixBridge@{Unix\-Bridge}}
+\subsubsection[{get\-Sym\-Link}]{\setlength{\rightskip}{0pt plus 5cm}string Unix\-Bridge\-::get\-Sym\-Link (
+\begin{DoxyParamCaption}
+\item[{string}]{link}
+\end{DoxyParamCaption}
+)}}\label{classUnixBridge_a818d57b1f182e3fe4dcf84eb5b6e5df1}
+
+
+Read the content of a symbolic link. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & link to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string with content if fail \char`\"{}\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{classUnixBridge_a9c44f87fedf0e1933e084c4f9c8571dc}{\index{Unix\-Bridge@{Unix\-Bridge}!mv\-Dir@{mv\-Dir}}
+\index{mv\-Dir@{mv\-Dir}!UnixBridge@{Unix\-Bridge}}
+\subsubsection[{mv\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}int Unix\-Bridge\-::mv\-Dir (
+\begin{DoxyParamCaption}
+\item[{string}]{move\-\_\-from, }
+\item[{string}]{move\-\_\-to}
+\end{DoxyParamCaption}
+)}}\label{classUnixBridge_a9c44f87fedf0e1933e084c4f9c8571dc}
+
+
+C++ wrapper for unix mv -\/r. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & with directory to move \\
+\hline
+{\em string} & with target \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int with succsess 1 or fail 0 
+\end{DoxyReturn}
+\hypertarget{classUnixBridge_adc00f8d0d5dd0a3b2cbb654172ec8902}{\index{Unix\-Bridge@{Unix\-Bridge}!mv\-File@{mv\-File}}
+\index{mv\-File@{mv\-File}!UnixBridge@{Unix\-Bridge}}
+\subsubsection[{mv\-File}]{\setlength{\rightskip}{0pt plus 5cm}int Unix\-Bridge\-::mv\-File (
+\begin{DoxyParamCaption}
+\item[{string}]{in, }
+\item[{string}]{out}
+\end{DoxyParamCaption}
+)}}\label{classUnixBridge_adc00f8d0d5dd0a3b2cbb654172ec8902}
+
+
+C++ wrapper for unix mv. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & with file to move \\
+\hline
+{\em string} & target \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int with succsess 1 or fail 0 
+\end{DoxyReturn}
+\hypertarget{classUnixBridge_a2f081bb6ceae9693c1160b3530c937ca}{\index{Unix\-Bridge@{Unix\-Bridge}!set\-Logger@{set\-Logger}}
+\index{set\-Logger@{set\-Logger}!UnixBridge@{Unix\-Bridge}}
+\subsubsection[{set\-Logger}]{\setlength{\rightskip}{0pt plus 5cm}static void Unix\-Bridge\-::set\-Logger (
+\begin{DoxyParamCaption}
+\item[{{\bf Logger} \&}]{log}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classUnixBridge_a2f081bb6ceae9693c1160b3530c937ca}
+
+
+Setter for logger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classLogger}{Logger}} & \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}

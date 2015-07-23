@@ -38,7 +38,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -70,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -138,52 +137,56 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="classEmSyRU.html#ac5d6a38500bc912eba862a14cfb0b1b2">EmSyRU</a>(<span class="keywordtype">string</span> user, <span class="keywordtype">string</span> dlURL, <span class="keywordtype">string</span> pw, <span class="keywordtype">string</span> env  = <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classEmSyRU.html#abad85d79a8bd0176f4a7f95d1df2f03e">~EmSyRU</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="classEmSyRU.html#ac5d6a38500bc912eba862a14cfb0b1b2">EmSyRU</a>(<span class="keywordtype">string</span> user, <span class="keywordtype">string</span> dlURL, <span class="keywordtype">string</span> pw, <span class="keywordtype">string</span> env  = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">int</span> update();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">static</span> <a class="code" href="classLogger.html">Logger</a> log_;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> setLogger(<a class="code" href="classLogger.html">Logger</a>&amp; log){log_ = log; UnixBridge::setLogger(log);}</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">void</span> uploadLog();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordtype">int</span> findJobConfFile();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">int</span> prepareWorkbench();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;       </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">string</span> packageFile_ = <span class="stringliteral">&quot;Packages.conf&quot;</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordtype">string</span> logFile_ = <span class="stringliteral">&quot;job.log&quot;</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordtype">string</span> dlURL_;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordtype">string</span> upURL_;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordtype">string</span> env_;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordtype">string</span> jobFile_;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">string</span> jobConfFile_ = <span class="stringliteral">&quot;Job.conf&quot;</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="classUpdater.html">Updater</a>  up_;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="classUnixBridge.html">UnixBridge</a> ub_;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="classCurlCommunicator.html">CurlCommunicator</a> curli_;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classEmSyRU.html#abad85d79a8bd0176f4a7f95d1df2f03e">~EmSyRU</a>();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classEmSyRU.html#aeccfb365e5aac8a9b5fee2557645353d">update</a>();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classEmSyRU.html#a63f349fb8a0000e9fec67de2cabfd216">   91</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="classLogger.html">Logger</a> <a class="code" href="classEmSyRU.html#a63f349fb8a0000e9fec67de2cabfd216">log_</a>; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classEmSyRU.html#a2720ea250a00225d5640145fecc66ff2">   97</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classEmSyRU.html#a2720ea250a00225d5640145fecc66ff2">setLogger</a>(<a class="code" href="classLogger.html">Logger</a>&amp; log){<a class="code" href="classEmSyRU.html#a63f349fb8a0000e9fec67de2cabfd216">log_</a> = log; <a class="code" href="classUnixBridge.html#a2f081bb6ceae9693c1160b3530c937ca">UnixBridge::setLogger</a>(log);}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordtype">void</span> uploadLog();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordtype">int</span> findJobConfFile();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordtype">int</span> prepareWorkbench();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;       </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordtype">string</span> packageFile_ = <span class="stringliteral">&quot;Packages.conf&quot;</span>;  </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">string</span> logFile_ = <span class="stringliteral">&quot;job.log&quot;</span>;            </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordtype">string</span> dlURL_;                          </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordtype">string</span> upURL_;                          </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordtype">string</span> env_;                            </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordtype">string</span> jobFile_;                        </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordtype">string</span> jobConfFile_ = <span class="stringliteral">&quot;Job.conf&quot;</span>;       </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="classUpdater.html">Updater</a>  up_;                           </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="classUnixBridge.html">UnixBridge</a> ub_;                         </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <a class="code" href="classCurlCommunicator.html">CurlCommunicator</a> curli_;                </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;};</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classLogger_html"><div class="ttname"><a href="classLogger.html">Logger</a></div><div class="ttdef"><b>Definition:</b> Logger.hpp:46</div></div>
 <div class="ttc" id="classEmSyRU_html"><div class="ttname"><a href="classEmSyRU.html">EmSyRU</a></div><div class="ttdoc">Class for Emdedded System Remote Updater. </div><div class="ttdef"><b>Definition:</b> EmSyRU.hpp:63</div></div>
 <div class="ttc" id="Updater_8hpp_html"><div class="ttname"><a href="Updater_8hpp.html">Updater.hpp</a></div><div class="ttdoc">Package class for holding and controling packages to update. </div></div>
 <div class="ttc" id="CurlCommunicator_8hpp_html"><div class="ttname"><a href="CurlCommunicator_8hpp.html">CurlCommunicator.hpp</a></div><div class="ttdoc">class for communication </div></div>
+<div class="ttc" id="classUnixBridge_html_a2f081bb6ceae9693c1160b3530c937ca"><div class="ttname"><a href="classUnixBridge.html#a2f081bb6ceae9693c1160b3530c937ca">UnixBridge::setLogger</a></div><div class="ttdeci">static void setLogger(Logger &amp;log)</div><div class="ttdoc">Setter for logger. </div><div class="ttdef"><b>Definition:</b> UnixBridge.hpp:134</div></div>
 <div class="ttc" id="classUpdater_html"><div class="ttname"><a href="classUpdater.html">Updater</a></div><div class="ttdoc">Pacakge class with all relevant package informations. </div><div class="ttdef"><b>Definition:</b> Updater.hpp:69</div></div>
+<div class="ttc" id="classEmSyRU_html_a2720ea250a00225d5640145fecc66ff2"><div class="ttname"><a href="classEmSyRU.html#a2720ea250a00225d5640145fecc66ff2">EmSyRU::setLogger</a></div><div class="ttdeci">static void setLogger(Logger &amp;log)</div><div class="ttdoc">Setter for logger. </div><div class="ttdef"><b>Definition:</b> EmSyRU.hpp:97</div></div>
 <div class="ttc" id="Logger_8hpp_html"><div class="ttname"><a href="Logger_8hpp.html">Logger.hpp</a></div><div class="ttdoc">Logger class for report generation. </div></div>
 <div class="ttc" id="classEmSyRU_html_abad85d79a8bd0176f4a7f95d1df2f03e"><div class="ttname"><a href="classEmSyRU.html#abad85d79a8bd0176f4a7f95d1df2f03e">EmSyRU::~EmSyRU</a></div><div class="ttdeci">~EmSyRU()</div><div class="ttdoc">Dtor. </div><div class="ttdef"><b>Definition:</b> EmSyRU.cpp:59</div></div>
-<div class="ttc" id="UnixBridge_8hpp_html"><div class="ttname"><a href="UnixBridge_8hpp.html">UnixBridge.hpp</a></div><div class="ttdoc">Class for ineraction with unix systems. </div></div>
+<div class="ttc" id="UnixBridge_8hpp_html"><div class="ttname"><a href="UnixBridge_8hpp.html">UnixBridge.hpp</a></div><div class="ttdoc">Class for interaction with unix systems. </div></div>
 <div class="ttc" id="classEmSyRU_html_ac5d6a38500bc912eba862a14cfb0b1b2"><div class="ttname"><a href="classEmSyRU.html#ac5d6a38500bc912eba862a14cfb0b1b2">EmSyRU::EmSyRU</a></div><div class="ttdeci">EmSyRU(string user, string dlURL, string pw, string env=&quot;&quot;)</div><div class="ttdoc">Ctor. </div><div class="ttdef"><b>Definition:</b> EmSyRU.cpp:35</div></div>
+<div class="ttc" id="classEmSyRU_html_a63f349fb8a0000e9fec67de2cabfd216"><div class="ttname"><a href="classEmSyRU.html#a63f349fb8a0000e9fec67de2cabfd216">EmSyRU::log_</a></div><div class="ttdeci">static Logger log_</div><div class="ttdoc">Logger for tracking and generating report to upload. </div><div class="ttdef"><b>Definition:</b> EmSyRU.hpp:91</div></div>
 <div class="ttc" id="classUnixBridge_html"><div class="ttname"><a href="classUnixBridge.html">UnixBridge</a></div><div class="ttdef"><b>Definition:</b> UnixBridge.hpp:58</div></div>
 <div class="ttc" id="classCurlCommunicator_html"><div class="ttname"><a href="classCurlCommunicator.html">CurlCommunicator</a></div><div class="ttdoc">Class for communication This class provides the communication for downloading job files or uploading ...</div><div class="ttdef"><b>Definition:</b> CurlCommunicator.hpp:64</div></div>
+<div class="ttc" id="classEmSyRU_html_aeccfb365e5aac8a9b5fee2557645353d"><div class="ttname"><a href="classEmSyRU.html#aeccfb365e5aac8a9b5fee2557645353d">EmSyRU::update</a></div><div class="ttdeci">int update()</div><div class="ttdoc">Starts the whole update process This Method uses the given url user and pw to download a jobfile extr...</div><div class="ttdef"><b>Definition:</b> EmSyRU.cpp:64</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 22 2015 22:44:20 for EmSyRU by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 23 2015 17:19:13 for EmSyRU by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
