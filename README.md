@@ -41,16 +41,16 @@ REQUIREMENTS
 INSTALL
 ===========
 
-mkdir build && cd build
-cmake ../
-make
+- mkdir build && cd build
+- cmake ../
+- make
 
 
 
 Example use
 ===========
 
-./EmSyRU "user@ftp://path/to/jobfile" "password"
-./EmSyRU "user@ftp://path/to/jobfile" "password" ["/path/for/creating/workbench"]
+- ./EmSyRU "user@ftp://path/to/jobfile" "password"
+- ./EmSyRU "user@ftp://path/to/jobfile" "password" ["/path/for/creating/workbench"]
 
 If no path for creating the workbench is given the workbench will be created next to executable
