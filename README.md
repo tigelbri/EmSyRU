@@ -38,13 +38,19 @@ REQUIREMENTS
 
 
 
-INSTALL
+BUILD
 ===========
 
 - mkdir build && cd build
 - cmake ../
 - make
 
+BUILD for arm architecture
+===========
+
+- mkdir build && cd build
+- cmake -C ../toolchains/armv7.cmake  ../ (needs 32bit Curl)
+- make
 
 
 Example use
